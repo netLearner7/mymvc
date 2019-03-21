@@ -34,7 +34,7 @@ namespace Heavy.Web
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddDefaultIdentity<IdentityUser>(options=> {
+            services.AddIdentity<IdentityUser,IdentityRole>(options=> {
                 options.Password.RequireDigit = false;
                 options.Password.RequiredLength = 1;
                 options.Password.RequireLowercase = false;

@@ -1,0 +1,21 @@
+﻿
+@model Heavy.Web.ViewModels.RoleViewModel
+
+@{
+    ViewData["Title"] = "AddRole";
+}
+
+<form  method="post" asp-action="AddRole">
+    <div>
+        <label asp-for="name"></label>
+        <input type="text" asp-for="name" />
+        <span asp-validation-for="name"></span>
+    </div>
+   
+    <div asp-validation-summary="ModelOnly">
+
+    </div>
+
+    <input type="submit" name="name" value="添加" />
+
+</form>

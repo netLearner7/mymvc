@@ -1,0 +1,15 @@
+﻿@model Heavy.Web.ViewModels.AddOrRemoveUserToRoleVM
+@{
+    ViewData["Title"] = "AddUserToRole";
+}
+
+<h1>AddUserToRole</h1>
+
+<div asp-validation-summary="ModelOnly"></div>
+<form method="post" asp-action="RemoveUserFromRole">
+    <input type="hidden" asp-for="@Model.RoleId" />
+    <select asp-for="@Model.UserId" asp-items="@(new SelectList(Model.identityUsers,"Id","UserName"))">
+        <option value="">请选择要移除的用户</option>
+    </select>
+    <input type="submit" value="移除" />
+</form>

@@ -1,0 +1,38 @@
+﻿@model Heavy.Web.ViewModels.EditRoleViewModel
+
+@{
+    ViewData["Title"] = "EditAsync";
+}
+
+<h1>EditAsync</h1>
+
+<form method="post" asp-action="EditRole">
+
+    <div>
+        <label asp-for="Id"></label>
+        <input type="text" asp-for="Id" />
+        <span asp-validation-for="Id"></span>
+    </div>
+
+    <div>
+        <label asp-for="name"></label>
+        <input type="text" asp-for="name" />
+        <span asp-validation-for="name"></span>
+    </div>
+    <div asp-validation-summary="ModelOnly"></div>
+
+    <input type="submit"  value="保存" />
+</form>
+
+<ul>
+    @{ 
+        foreach (var item in Model.users)
+        {
+            <li>@item</li>
+        }
+    }}
+</ul>
+
+<a asp-action="AddUserToRole" asp-route-Id="@Model.Id">为角色添加用户</a>
+
+<a asp-action="RemoveUserFromRole" asp-route-Id="@Model.Id">为角色移除用户</a>

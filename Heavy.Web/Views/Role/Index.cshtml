@@ -1,0 +1,36 @@
+﻿
+@model IEnumerable< Microsoft.AspNetCore.Identity.IdentityRole>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div asp-validation-summary="ModelOnly"></div>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>角色名</th>
+            <th>操作</th>
+        </tr>
+    </thead>
+    @{
+        foreach (var item in Model)
+        {
+    <tr>
+        <td>@item.Id</td>
+        <td>@item.Name</td>
+        <td>
+            <a asp-action="EditRole" asp-route-id="@item.Id">修改</a>
+            <form asp-action="DeleteRole" asp-route-id="@item.Id" method="post">
+                <input class="btn" type="submit" name="delete" id="delete" value="删除" />
+            </form>
+        </td>
+
+    </tr>
+
+        }
+    }
+</table>
+
+<a asp-action="AddRole" class="btn">添加角色</a>

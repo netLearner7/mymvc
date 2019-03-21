@@ -38,3 +38,9 @@ E:\ASP.NET-Core-MVC-Tutorial-Code-master\ASP.NET-Core-MVC-Tutorial-Code-master\1
 E:\ASP.NET-Core-MVC-Tutorial-Code-master\ASP.NET-Core-MVC-Tutorial-Code-master\15 start\Heavy.Web\obj\Debug\netcoreapp2.2\Razor\Views\User\Index.g.cshtml.cs
 E:\ASP.NET-Core-MVC-Tutorial-Code-master\ASP.NET-Core-MVC-Tutorial-Code-master\15 start\Heavy.Web\obj\Debug\netcoreapp2.2\Razor\Views\User\AddUser.g.cshtml.cs
 E:\ASP.NET-Core-MVC-Tutorial-Code-master\ASP.NET-Core-MVC-Tutorial-Code-master\15 start\Heavy.Web\obj\Debug\netcoreapp2.2\Razor\Views\User\Edit.g.cshtml.cs
+E:\ASP.NET-Core-MVC-Tutorial-Code-master\ASP.NET-Core-MVC-Tutorial-Code-master\15 start\Heavy.Web\obj\Debug\netcoreapp2.2\Heavy.Web.csprojAssemblyReference.cache
+E:\ASP.NET-Core-MVC-Tutorial-Code-master\ASP.NET-Core-MVC-Tutorial-Code-master\15 start\Heavy.Web\obj\Debug\netcoreapp2.2\Razor\Views\Role\Index.g.cshtml.cs
+E:\ASP.NET-Core-MVC-Tutorial-Code-master\ASP.NET-Core-MVC-Tutorial-Code-master\15 start\Heavy.Web\obj\Debug\netcoreapp2.2\Razor\Views\Role\AddRole.g.cshtml.cs
+E:\ASP.NET-Core-MVC-Tutorial-Code-master\ASP.NET-Core-MVC-Tutorial-Code-master\15 start\Heavy.Web\obj\Debug\netcoreapp2.2\Razor\Views\Role\EditRole.g.cshtml.cs
+E:\ASP.NET-Core-MVC-Tutorial-Code-master\ASP.NET-Core-MVC-Tutorial-Code-master\15 start\Heavy.Web\obj\Debug\netcoreapp2.2\Razor\Views\Role\AddUserToRole.g.cshtml.cs
+E:\ASP.NET-Core-MVC-Tutorial-Code-master\ASP.NET-Core-MVC-Tutorial-Code-master\15 start\Heavy.Web\obj\Debug\netcoreapp2.2\Razor\Views\Role\RemoveUserFromRole.g.cshtml.cs
