@@ -2,20 +2,23 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Heavy.Web.Models;
 using Heavy.Web.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace Heavy.Web.Controllers
 {
+    [Authorize(Roles = "zyz2")]
     public class RoleController : Controller
     {
-        private readonly UserManager<IdentityUser> userManager;
+        private readonly UserManager<ApplicationUser> userManager;
         private readonly RoleManager<IdentityRole> roleManager;
 
         public RoleController(
-            UserManager<IdentityUser> userManager,
+            UserManager<ApplicationUser> userManager,
             RoleManager<IdentityRole> roleManager
             )
         {
@@ -251,7 +254,7 @@ namespace Heavy.Web.Controllers
         }
 
 
-        public async Task<IdentityResult> gengxin(IdentityUser user, string role) {
+        public async Task<IdentityResult> gengxin(ApplicationUser user, string role) {
 
             return await userManager.RemoveFromRoleAsync(user, role);
         }

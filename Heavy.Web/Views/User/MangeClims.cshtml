@@ -1,0 +1,19 @@
+﻿@using Heavy.Web.ViewModels;
+@model MangeClimsViewModel
+
+
+@{
+    ViewData["Title"] = "MangeClims";
+}
+
+<h1>MangeClims</h1>
+
+<form method="post" asp-action="MangeClims">
+    <input type="hidden" asp-for="UserId"  />
+
+    <select asp-for="ClimsId" asp-items="@(new SelectList(Model.AllClims))">
+        <option>请选择</option>
+
+    </select>
+    <input type="submit" name="name" value="添加" />
+</form>

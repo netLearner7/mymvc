@@ -9,6 +9,7 @@ using Heavy.Web.Data;
 using Heavy.Web.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Heavy.Web.Models;
 
 namespace Heavy.Web
 {
@@ -34,7 +35,7 @@ namespace Heavy.Web
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddIdentity<IdentityUser,IdentityRole>(options=> {
+            services.AddIdentity<ApplicationUser,IdentityRole>(options=> {
                 options.Password.RequireDigit = false;
                 options.Password.RequiredLength = 1;
                 options.Password.RequireLowercase = false;
@@ -52,6 +53,12 @@ namespace Heavy.Web
                 });
 
             services.AddScoped<IAlbumService, AlbumEfService>();
+
+            services.AddAuthorization(option =>
+            {
+                option.AddPolicy("管理员策略", p => p.RequireRole("zyz2"));
+                option.AddPolicy("音乐编辑", p => p.RequireClaim("edit"));
+            });
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)

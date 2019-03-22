@@ -21,5 +21,7 @@ namespace Heavy.Web.ViewModels
         [Required]
         [DataType(DataType.Password)]
         public string PassWord { get; set; }
+
+        public List<string> Clims { get; set; }
     }
 }

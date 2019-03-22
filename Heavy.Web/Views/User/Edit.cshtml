@@ -29,3 +29,19 @@
     <input type="submit" value="提交" />
 
 </form>
+
+<hr>
+
+用户的clims
+
+<ul>
+    @{ 
+        foreach (var item in Model.Clims)
+        {
+            <li>
+                @item
+            </li>
+        }
+    }
+</ul>
+<a asp-action="MangeClims" asp-route-Id="@Model.Id">管理用户的Clims</a>
