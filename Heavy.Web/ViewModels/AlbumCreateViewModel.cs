@@ -1,13 +1,16 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
+using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace Heavy.Web.ViewModels
 {
     public class AlbumCreateViewModel
     {
+
         [Display(Name = "专辑名")]
         [Required(ErrorMessage = "{0}是必填项"), MaxLength(100, ErrorMessage = "{0}的长度不可超过{1}")]
         public string Title { get; set; }
+
 
         [Display(Name = "艺人")]
         [Required(ErrorMessage = "{0}是必填项"), MaxLength(100, ErrorMessage = "{0}的长度不可超过{1}")]

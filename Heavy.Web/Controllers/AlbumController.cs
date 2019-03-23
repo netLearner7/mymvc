@@ -24,6 +24,7 @@ namespace Heavy.Web.Controllers
         }
 
         // GET: Album
+
         public async Task<ActionResult> Index()
         {
             var albums = await _albumService.GetAllAsync();
