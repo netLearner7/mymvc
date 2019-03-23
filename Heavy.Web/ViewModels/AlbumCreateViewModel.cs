@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
+﻿using Heavy.Web.Vilidations;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using System;
 using System.ComponentModel.DataAnnotations;
 
@@ -25,7 +26,8 @@ namespace Heavy.Web.ViewModels
         public decimal Price { get; set; }
 
         [Display(Name = "封面地址")]
-        [Required(ErrorMessage = "{0}是必填项"), MaxLength(200, ErrorMessage = "{0}的长度不可超过{1}")]
+        //[Required(ErrorMessage = "{0}是必填项"), MaxLength(200, ErrorMessage = "{0}的长度不可超过{1}")]
+        [Vili(Error ="不正确")]
         public string CoverUrl { get; set; }
     }
 }
