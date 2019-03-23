@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -10,6 +11,7 @@ namespace Heavy.Web.ViewModels
     {
         [Required]
         [Display(Name = "角色名称")]
+        [Remote("hhh","Role",ErrorMessage ="用户名有问题！")]
         public string name { get; set; }
     }
 }

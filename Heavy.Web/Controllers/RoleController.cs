@@ -33,7 +33,8 @@ namespace Heavy.Web.Controllers
             return View(model);
         }
 
-        public IActionResult AddRole() {
+        public IActionResult AddRole()
+        {
 
             return View();
         }
@@ -70,7 +71,8 @@ namespace Heavy.Web.Controllers
         }
 
 
-        public async Task<IActionResult> EditRole(string id) {
+        public async Task<IActionResult> EditRole(string id)
+        {
             var role = await roleManager.FindByIdAsync(id);
 
             if (role == null)
@@ -101,16 +103,19 @@ namespace Heavy.Web.Controllers
 
         [HttpPost]
         [AutoValidateAntiforgeryToken]
-        public async Task<IActionResult> EditRole(EditRoleViewModel editRoleViewModel) {
+        public async Task<IActionResult> EditRole(EditRoleViewModel editRoleViewModel)
+        {
 
-            var role =await roleManager.FindByIdAsync(editRoleViewModel.Id);
+            var role = await roleManager.FindByIdAsync(editRoleViewModel.Id);
 
-            if (role != null) {
+            if (role != null)
+            {
 
                 role.Name = editRoleViewModel.name;
-                var result =await roleManager.UpdateAsync(role);
+                var result = await roleManager.UpdateAsync(role);
 
-                if (result.Succeeded) {
+                if (result.Succeeded)
+                {
                     return RedirectToAction(nameof(Index));
                 }
 
@@ -126,13 +131,14 @@ namespace Heavy.Web.Controllers
 
         [HttpPost]
         [AutoValidateAntiforgeryToken]
-        public async Task<IActionResult> DeleteRole(string Id) {
+        public async Task<IActionResult> DeleteRole(string Id)
+        {
 
             var role = await roleManager.FindByIdAsync(Id);
 
-            if (role!=null)
+            if (role != null)
             {
-                var result=await roleManager.DeleteAsync(role);
+                var result = await roleManager.DeleteAsync(role);
 
                 if (result.Succeeded)
                 {
@@ -140,7 +146,7 @@ namespace Heavy.Web.Controllers
                 }
 
                 ModelState.AddModelError(string.Empty, "删除失败！");
-                
+
             }
             ModelState.AddModelError(string.Empty, "没有找到这个用户！");
 
@@ -148,7 +154,8 @@ namespace Heavy.Web.Controllers
         }
 
 
-        public async Task<IActionResult> AddUserToRole(string Id) {
+        public async Task<IActionResult> AddUserToRole(string Id)
+        {
 
             var role = await roleManager.FindByIdAsync(Id);
 
@@ -166,7 +173,8 @@ namespace Heavy.Web.Controllers
 
             foreach (var item in UserItems)
             {
-                if (!await userManager.IsInRoleAsync(item, role.Name)) {
+                if (!await userManager.IsInRoleAsync(item, role.Name))
+                {
                     vm.identityUsers.Add(item);
                 }
             }
@@ -175,16 +183,19 @@ namespace Heavy.Web.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddUserToRole(AddOrRemoveUserToRoleVM addUserToRoleVM) {
+        public async Task<IActionResult> AddUserToRole(AddOrRemoveUserToRoleVM addUserToRoleVM)
+        {
 
-            var role =await roleManager.FindByIdAsync(addUserToRoleVM.RoleId);
-            var user =await userManager.FindByIdAsync(addUserToRoleVM.UserId);
+            var role = await roleManager.FindByIdAsync(addUserToRoleVM.RoleId);
+            var user = await userManager.FindByIdAsync(addUserToRoleVM.UserId);
 
-            if (role != null && user != null) {
+            if (role != null && user != null)
+            {
 
-                var result= await userManager.AddToRoleAsync(user, role.Name);
+                var result = await userManager.AddToRoleAsync(user, role.Name);
 
-                if (result.Succeeded) {
+                if (result.Succeeded)
+                {
                     return RedirectToAction(nameof(EditRole), new { id = role.Id });
                 }
 
@@ -200,20 +211,22 @@ namespace Heavy.Web.Controllers
 
         }
 
-        public async Task<IActionResult> RemoveUserFromRole(string Id) {
+        public async Task<IActionResult> RemoveUserFromRole(string Id)
+        {
 
-            var role =await roleManager.FindByIdAsync(Id);
+            var role = await roleManager.FindByIdAsync(Id);
             var userList = new List<IdentityUser>();
 
             foreach (var item in userManager.Users)
             {
-                if (await userManager.IsInRoleAsync(item,role.Name))
+                if (await userManager.IsInRoleAsync(item, role.Name))
                 {
                     userList.Add(item);
                 }
             }
 
-            var vm = new AddOrRemoveUserToRoleVM() {
+            var vm = new AddOrRemoveUserToRoleVM()
+            {
                 RoleId = Id,
                 identityUsers = userList
             };
@@ -226,10 +239,10 @@ namespace Heavy.Web.Controllers
         [HttpPost]
         public async Task<IActionResult> RemoveUserFromRole(AddOrRemoveUserToRoleVM addOrRemoveUserToRoleVM)
         {
-            var role =await roleManager.FindByIdAsync(addOrRemoveUserToRoleVM.RoleId);
+            var role = await roleManager.FindByIdAsync(addOrRemoveUserToRoleVM.RoleId);
             var user = await userManager.FindByIdAsync(addOrRemoveUserToRoleVM.UserId);
 
-            if (role!=null && user!=null && (await gengxin(user, role.Name)).Succeeded)
+            if (role != null && user != null && (await gengxin(user, role.Name)).Succeeded)
             {
                 //var result=await userManager.RemoveFromRoleAsync(user,role.Name);              
 
@@ -254,12 +267,21 @@ namespace Heavy.Web.Controllers
         }
 
 
-        public async Task<IdentityResult> gengxin(ApplicationUser user, string role) {
+        public async Task<IdentityResult> gengxin(ApplicationUser user, string role)
+        {
 
             return await userManager.RemoveFromRoleAsync(user, role);
         }
 
-
-
+        [AcceptVerbs("Get", "Post")]
+        public async Task<IActionResult> hhh([Bind("name")]string name)
+        {
+            var obj = await roleManager.FindByNameAsync(name);
+            if (obj != null)
+            {
+                return Json(false);
+            }
+            return Json(true);
+        }
     }
 }
