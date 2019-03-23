@@ -10,6 +10,9 @@ using Heavy.Web.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Heavy.Web.Models;
+using Heavy.Web.Auth;
+using Microsoft.AspNetCore.Authorization;
+using System;
 
 namespace Heavy.Web
 {
@@ -58,7 +61,26 @@ namespace Heavy.Web
             {
                 option.AddPolicy("管理员策略", p => p.RequireRole("zyz2"));
                 option.AddPolicy("音乐编辑", p => p.RequireClaim("edit"));
+
+                
+
+                option.AddPolicy("音乐编辑1", p => p.RequireAssertion(
+                     context =>
+                     {
+                         if (context.User.HasClaim(x => x.Type == "edit")) {
+                             return true;
+                         }
+                         return false;
+                     }
+                 ));
+
+                option.AddPolicy("音乐编辑2", p => p.AddRequirements(new userQueirment()));
+
             });
+
+            services.AddSingleton<IAuthorizationHandler, EmailHandler>();
+            services.AddSingleton<IAuthorizationHandler, userQueirmentHandler>();
+            services.AddSingleton<IAuthorizationHandler, zyz2Handler>();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)

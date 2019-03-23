@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Heavy.Web.Controllers
 {
-    [Authorize(Policy ="音乐编辑")]
+    [Authorize(Policy = "音乐编辑1")]
     public class AlbumController : Controller
     {
         private readonly IAlbumService _albumService;

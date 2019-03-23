@@ -11,7 +11,8 @@ namespace Heavy.Web.Data
             "edit",
             "edit2",
             "edit3",
-            "edit4"
+            "edit4",
+            "email"
         };
     }
 }

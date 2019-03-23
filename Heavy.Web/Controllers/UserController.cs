@@ -19,6 +19,7 @@ namespace Heavy.Web.Controllers
     public class UserController : Controller
     {
         private readonly UserManager<ApplicationUser> userManager;
+        
 
         public UserController(UserManager<ApplicationUser> userManager)
         {
@@ -171,6 +172,8 @@ namespace Heavy.Web.Controllers
             {
                 return RedirectToAction("Index");
             }
+
+
 
             ModelState.AddModelError(string.Empty, "编辑用户Claims时发生错误");
             return View(mangeClimsViewModel);
