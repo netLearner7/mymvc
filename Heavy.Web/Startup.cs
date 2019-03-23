@@ -81,6 +81,9 @@ namespace Heavy.Web
             services.AddSingleton<IAuthorizationHandler, EmailHandler>();
             services.AddSingleton<IAuthorizationHandler, userQueirmentHandler>();
             services.AddSingleton<IAuthorizationHandler, zyz2Handler>();
+
+            services.AddAntiforgery();
+            services.AddMvc(option => { option.Filters.Add(new AutoValidateAntiforgeryTokenAttribute()); });
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
