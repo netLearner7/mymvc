@@ -1,8 +1,18 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+@using Heavy.Web.TagHelpers
 
+<email mail-to="123@163.com">这里是邮箱</email>
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+<email>Support@contoso.com</email>
+<bold color="green"> 这个是粗字体吗?</bold>
+<p bold my-style="@(new MyStyle()
+    {
+        Color = "red",
+        FontFamily = "SimHei",
+        FontSize = 30
+    })">应该是粗字体.</p>

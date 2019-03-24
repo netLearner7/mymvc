@@ -24,7 +24,7 @@ using Heavy.Web.Models;
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"dc81077a611cacc3bffe2fd59c9486a901a294ce", @"/Views/Album/Create.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"80caf62a2aaa7789649aa0f3d3c700917a769933", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a18871b1ff2ebb05c28f3a01df3cfc9fded43fc2", @"/Views/_ViewImports.cshtml")]
     public class Views_Album_Create : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Heavy.Web.ViewModels.AlbumCreateViewModel>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("col-sm-2"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);

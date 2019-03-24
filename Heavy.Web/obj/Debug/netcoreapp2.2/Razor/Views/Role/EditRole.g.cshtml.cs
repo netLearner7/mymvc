@@ -24,7 +24,7 @@ using Heavy.Web.Models;
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a1155092648607a43b174a2924dcd7530b7dc13a", @"/Views/Role/EditRole.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"80caf62a2aaa7789649aa0f3d3c700917a769933", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a18871b1ff2ebb05c28f3a01df3cfc9fded43fc2", @"/Views/_ViewImports.cshtml")]
     public class Views_Role_EditRole : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Heavy.Web.ViewModels.EditRoleViewModel>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("type", "text", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
