@@ -29,9 +29,31 @@ using Heavy.Web.TagHelpers;
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"50e0e7a4d6118a8c0b2e37356984ce253edcece4", @"/Views/Home/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a18871b1ff2ebb05c28f3a01df3cfc9fded43fc2", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b03995a19a1db605c38a3335608992a42192c4d3", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("mail-to", "123@163.com", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_1 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("color", new global::Microsoft.AspNetCore.Html.HtmlString("green"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        #line hidden
+        #pragma warning disable 0169
+        private string __tagHelperStringValueBuffer;
+        #pragma warning restore 0169
+        private global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext __tagHelperExecutionContext;
+        private global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner __tagHelperRunner = new global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner();
+        private global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperScopeManager __backed__tagHelperScopeManager = null;
+        private global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperScopeManager __tagHelperScopeManager
+        {
+            get
+            {
+                if (__backed__tagHelperScopeManager == null)
+                {
+                    __backed__tagHelperScopeManager = new global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperScopeManager(StartTagHelperWritingScope, EndTagHelperWritingScope);
+                }
+                return __backed__tagHelperScopeManager;
+            }
+        }
+        private global::Heavy.Web.TagHelpers.EmailTagHelper __Heavy_Web_TagHelpers_EmailTagHelper;
+        private global::Heavy.Web.TagHelpers.BoldTagHelper __Heavy_Web_TagHelpers_BoldTagHelper;
         #pragma warning disable 1998
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
@@ -41,31 +63,102 @@ using Heavy.Web.TagHelpers;
 
 #line default
 #line hidden
-            BeginContext(74, 316, true);
-            WriteLiteral(@"
-<email mail-to=""123@163.com"">这里是邮箱</email>
-<div class=""text-center"">
-    <h1 class=""display-4"">Welcome</h1>
-    <p>Learn about <a href=""https://docs.microsoft.com/aspnet/core"">building Web apps with ASP.NET Core</a>.</p>
-</div>
-<email>Support@contoso.com</email>
-<bold color=""green""> 这个是粗字体吗?</bold>
-<p bold");
+            BeginContext(74, 2, true);
+            WriteLiteral("\r\n");
             EndContext();
-            BeginWriteAttribute("my-style", " my-style=\"", 390, "\"", 510, 1);
+            BeginContext(76, 42, false);
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("email", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "50e0e7a4d6118a8c0b2e37356984ce253edcece44409", async() => {
+                BeginContext(105, 5, true);
+                WriteLiteral("这里是邮箱");
+                EndContext();
+            }
+            );
+            __Heavy_Web_TagHelpers_EmailTagHelper = CreateTagHelper<global::Heavy.Web.TagHelpers.EmailTagHelper>();
+            __tagHelperExecutionContext.Add(__Heavy_Web_TagHelpers_EmailTagHelper);
+            __Heavy_Web_TagHelpers_EmailTagHelper.MailTo = (string)__tagHelperAttribute_0.Value;
+            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_0);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            EndContext();
+            BeginContext(118, 191, true);
+            WriteLiteral("\r\n<div class=\"text-center\">\r\n    <h1 class=\"display-4\">Welcome</h1>\r\n    <p>Learn about <a href=\"https://docs.microsoft.com/aspnet/core\">building Web apps with ASP.NET Core</a>.</p>\r\n</div>\r\n");
+            EndContext();
+            BeginContext(309, 34, false);
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("email", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "50e0e7a4d6118a8c0b2e37356984ce253edcece45922", async() => {
+                BeginContext(316, 19, true);
+                WriteLiteral("Support@contoso.com");
+                EndContext();
+            }
+            );
+            __Heavy_Web_TagHelpers_EmailTagHelper = CreateTagHelper<global::Heavy.Web.TagHelpers.EmailTagHelper>();
+            __tagHelperExecutionContext.Add(__Heavy_Web_TagHelpers_EmailTagHelper);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            EndContext();
+            BeginContext(343, 2, true);
+            WriteLiteral("\r\n");
+            EndContext();
+            BeginContext(345, 36, false);
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("bold", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "50e0e7a4d6118a8c0b2e37356984ce253edcece47059", async() => {
+                BeginContext(365, 9, true);
+                WriteLiteral(" 这个是粗字体吗?");
+                EndContext();
+            }
+            );
+            __Heavy_Web_TagHelpers_BoldTagHelper = CreateTagHelper<global::Heavy.Web.TagHelpers.BoldTagHelper>();
+            __tagHelperExecutionContext.Add(__Heavy_Web_TagHelpers_BoldTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_1);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            EndContext();
+            BeginContext(381, 2, true);
+            WriteLiteral("\r\n");
+            EndContext();
+            BeginContext(383, 140, false);
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("p", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "50e0e7a4d6118a8c0b2e37356984ce253edcece48265", async() => {
+                BeginContext(512, 7, true);
+                WriteLiteral("应该是粗字体.");
+                EndContext();
+            }
+            );
+            __Heavy_Web_TagHelpers_BoldTagHelper = CreateTagHelper<global::Heavy.Web.TagHelpers.BoldTagHelper>();
+            __tagHelperExecutionContext.Add(__Heavy_Web_TagHelpers_BoldTagHelper);
+            BeginWriteTagHelperAttribute();
+            __tagHelperStringValueBuffer = EndWriteTagHelperAttribute();
+            __tagHelperExecutionContext.AddHtmlAttribute("bold", Html.Raw(__tagHelperStringValueBuffer), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.Minimized);
 #line 13 "E:\ASP.NET-Core-MVC-Tutorial-Code-master\ASP.NET-Core-MVC-Tutorial-Code-master\15 start\Heavy.Web\Views\Home\Index.cshtml"
-WriteAttributeValue("", 401, new MyStyle()
+__Heavy_Web_TagHelpers_BoldTagHelper.MyStyle = (new MyStyle()
     {
         Color = "red",
         FontFamily = "SimHei",
         FontSize = 30
-    }, 401, 109, false);
+    });
 
 #line default
 #line hidden
-            EndWriteAttribute();
-            BeginContext(511, 12, true);
-            WriteLiteral(">应该是粗字体.</p>");
+            __tagHelperExecutionContext.AddTagHelperAttribute("my-style", __Heavy_Web_TagHelpers_BoldTagHelper.MyStyle, global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
             EndContext();
         }
         #pragma warning restore 1998

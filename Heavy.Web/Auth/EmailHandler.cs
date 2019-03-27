@@ -12,7 +12,7 @@ namespace Heavy.Web.Auth
         protected override Task HandleRequirementAsync(AuthorizationHandlerContext context, qqMailRequirement requirement)
         {
             var cliam = context.User.Claims.FirstOrDefault(x=>x.Type=="email");
-
+      
             if (cliam!=null)
             {
                 if (cliam.Value.EndsWith(requirement.requireEmail))

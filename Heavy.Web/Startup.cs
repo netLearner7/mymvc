@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.EntityFrameworkCore;
 using Heavy.Web.Data;
 using Heavy.Web.Services;
@@ -88,18 +89,23 @@ namespace Heavy.Web
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+
             if (env.IsDevelopment())
             {
+                //显示异常的详细信息
                 app.UseDeveloperExceptionPage();
+                //显示400-599的状态码
+                app.UseStatusCodePages();
+                //这个什么都不显示
                 app.UseDatabaseErrorPage();
             }
             else
             {
+                //到指定的页面这个页面在Shared文件夹中，也可以自定义一个
                 app.UseExceptionHandler("/Home/Error");
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
