@@ -1,0 +1,896 @@
+2019-04-01 14:29:24.462 +08:00 [INF] Entity Framework Core 2.2.2-servicing-10034 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-04-01 14:29:24.970 +08:00 [INF] Executed DbCommand (65ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Albums] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2019-04-01 14:29:25.111 +08:00 [INF] User profile is available. Using 'C:\Users\zyz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-04-01 14:29:27.839 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-04-01 14:29:28.047 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-04-01 14:29:28.128 +08:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing action Heavy.Web.Controllers.HomeController.Index (Heavy.Web)
+2019-04-01 14:29:28.154 +08:00 [INF] Executing action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web) - Validation state: "Valid"
+2019-04-01 14:29:28.155 +08:00 [INF] 这里是str...............................................200
+2019-04-01 14:29:28.159 +08:00 [INF] Executed action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2.1529000000000003ms.
+2019-04-01 14:29:28.232 +08:00 [INF] Executing ViewResult, running view Index.
+2019-04-01 14:29:28.657 +08:00 [INF] Executed ViewResult - view Index executed in 480.8616ms.
+2019-04-01 14:29:28.668 +08:00 [INF] Executed action Heavy.Web.Controllers.HomeController.Index (Heavy.Web) in 535.69ms
+2019-04-01 14:29:28.672 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-04-01 14:29:28.707 +08:00 [INF] Request finished in 871.1884ms 200 text/html; charset=utf-8
+2019-04-01 14:29:28.943 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/favicon.ico  
+2019-04-01 14:29:28.999 +08:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'E:\ASP.NET-Core-MVC-Tutorial-Code-master\ASP.NET-Core-MVC-Tutorial-Code-master\15 start\Heavy.Web\wwwroot\favicon.ico'
+2019-04-01 14:29:29.002 +08:00 [INF] Request finished in 59.0703ms 200 image/x-icon
+2019-04-01 14:29:35.640 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Role  
+2019-04-01 14:29:35.645 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.RoleController.Index (Heavy.Web)'
+2019-04-01 14:29:35.658 +08:00 [INF] Route matched with {action = "Index", controller = "Role", page = "", area = ""}. Executing action Heavy.Web.Controllers.RoleController.Index (Heavy.Web)
+2019-04-01 14:29:35.677 +08:00 [INF] Authorization failed.
+2019-04-01 14:29:35.685 +08:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2019-04-01 14:29:35.699 +08:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2019-04-01 14:29:35.709 +08:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2019-04-01 14:29:35.712 +08:00 [INF] Executed action Heavy.Web.Controllers.RoleController.Index (Heavy.Web) in 52.4446ms
+2019-04-01 14:29:35.716 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.RoleController.Index (Heavy.Web)'
+2019-04-01 14:29:35.721 +08:00 [INF] Request finished in 81.5053ms 302 
+2019-04-01 14:29:35.725 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Identity/Account/Login?ReturnUrl=%2FRole  
+2019-04-01 14:29:35.728 +08:00 [INF] Executing endpoint 'Page: /Account/Login'
+2019-04-01 14:29:35.782 +08:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2019-04-01 14:29:35.816 +08:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.LoginModel.OnGetAsync with arguments (["/Role"]) - ModelState is "Valid"
+2019-04-01 14:29:35.832 +08:00 [INF] AuthenticationScheme: Identity.External signed out.
+2019-04-01 14:29:35.837 +08:00 [INF] Executed handler method OnGetAsync, returned result .
+2019-04-01 14:29:35.840 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2019-04-01 14:29:35.841 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2019-04-01 14:29:35.976 +08:00 [INF] Executed page /Account/Login in 190.91590000000002ms
+2019-04-01 14:29:35.977 +08:00 [INF] Executed endpoint 'Page: /Account/Login'
+2019-04-01 14:29:35.978 +08:00 [INF] Request finished in 253.1811ms 200 text/html; charset=utf-8
+2019-04-01 14:29:36.000 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Identity/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js  
+2019-04-01 14:29:36.000 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Identity/lib/jquery-validation/dist/jquery.validate.js  
+2019-04-01 14:29:36.003 +08:00 [INF] Sending file. Request path: '/Identity/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js'. Physical path: 'N/A'
+2019-04-01 14:29:36.005 +08:00 [INF] Sending file. Request path: '/Identity/lib/jquery-validation/dist/jquery.validate.js'. Physical path: 'N/A'
+2019-04-01 14:29:36.014 +08:00 [INF] Request finished in 14.0313ms 200 application/javascript
+2019-04-01 14:29:36.007 +08:00 [INF] Request finished in 7.7171ms 200 application/javascript
+2019-04-01 14:29:42.369 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/Identity/Account/Login?ReturnUrl=%2FRole application/x-www-form-urlencoded 252
+2019-04-01 14:29:42.376 +08:00 [INF] Executing endpoint 'Page: /Account/Login'
+2019-04-01 14:29:42.383 +08:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2019-04-01 14:29:42.432 +08:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.LoginModel.OnPostAsync with arguments (["/Role"]) - ModelState is "Valid"
+2019-04-01 14:29:42.527 +08:00 [INF] Entity Framework Core 2.2.2-servicing-10034 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-04-01 14:29:42.697 +08:00 [INF] Executed DbCommand (67ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[BirthDate], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[IdCardNo], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0
+2019-04-01 14:29:42.971 +08:00 [INF] Executed DbCommand (9ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ApplicationUserId], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0
+2019-04-01 14:29:43.057 +08:00 [INF] Executed DbCommand (7ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2019-04-01 14:29:43.075 +08:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2019-04-01 14:29:43.083 +08:00 [INF] User logged in.
+2019-04-01 14:29:43.089 +08:00 [INF] Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2019-04-01 14:29:43.099 +08:00 [INF] Executing LocalRedirectResult, redirecting to /Role.
+2019-04-01 14:29:43.103 +08:00 [INF] Executed page /Account/Login in 717.59340000000009ms
+2019-04-01 14:29:43.105 +08:00 [INF] Executed endpoint 'Page: /Account/Login'
+2019-04-01 14:29:43.116 +08:00 [INF] Request finished in 747.4558ms 302 
+2019-04-01 14:29:43.119 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Role  
+2019-04-01 14:29:43.127 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.RoleController.Index (Heavy.Web)'
+2019-04-01 14:29:43.128 +08:00 [INF] Route matched with {action = "Index", controller = "Role", page = "", area = ""}. Executing action Heavy.Web.Controllers.RoleController.Index (Heavy.Web)
+2019-04-01 14:29:43.133 +08:00 [INF] Authorization failed.
+2019-04-01 14:29:43.134 +08:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2019-04-01 14:29:43.138 +08:00 [INF] Executing ForbidResult with authentication schemes ([]).
+2019-04-01 14:29:43.144 +08:00 [INF] AuthenticationScheme: Identity.Application was forbidden.
+2019-04-01 14:29:43.144 +08:00 [INF] Executed action Heavy.Web.Controllers.RoleController.Index (Heavy.Web) in 12.727ms
+2019-04-01 14:29:43.148 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.RoleController.Index (Heavy.Web)'
+2019-04-01 14:29:43.149 +08:00 [INF] Request finished in 30.5519ms 302 
+2019-04-01 14:29:43.153 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Identity/Account/AccessDenied?ReturnUrl=%2FRole  
+2019-04-01 14:29:43.154 +08:00 [INF] Executing endpoint 'Page: /Account/AccessDenied'
+2019-04-01 14:29:43.165 +08:00 [INF] Route matched with {page = "/Account/AccessDenied", area = "Identity", action = "", controller = ""}. Executing page /Account/AccessDenied
+2019-04-01 14:29:43.166 +08:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.AccessDeniedModel.OnGet with arguments (null) - ModelState is "Valid"
+2019-04-01 14:29:43.170 +08:00 [INF] Executed handler method OnGet, returned result .
+2019-04-01 14:29:43.171 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2019-04-01 14:29:43.172 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2019-04-01 14:29:43.186 +08:00 [INF] Executed page /Account/AccessDenied in 20.0029ms
+2019-04-01 14:29:43.187 +08:00 [INF] Executed endpoint 'Page: /Account/AccessDenied'
+2019-04-01 14:29:43.188 +08:00 [INF] Request finished in 35.633ms 200 text/html; charset=utf-8
+2019-04-01 14:29:44.772 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Role  
+2019-04-01 14:29:44.773 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.RoleController.Index (Heavy.Web)'
+2019-04-01 14:29:44.775 +08:00 [INF] Route matched with {action = "Index", controller = "Role", page = "", area = ""}. Executing action Heavy.Web.Controllers.RoleController.Index (Heavy.Web)
+2019-04-01 14:29:44.777 +08:00 [INF] Authorization failed.
+2019-04-01 14:29:44.778 +08:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2019-04-01 14:29:44.781 +08:00 [INF] Executing ForbidResult with authentication schemes ([]).
+2019-04-01 14:29:44.783 +08:00 [INF] AuthenticationScheme: Identity.Application was forbidden.
+2019-04-01 14:29:44.785 +08:00 [INF] Executed action Heavy.Web.Controllers.RoleController.Index (Heavy.Web) in 8.1915ms
+2019-04-01 14:29:44.787 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.RoleController.Index (Heavy.Web)'
+2019-04-01 14:29:44.788 +08:00 [INF] Request finished in 16.2466ms 302 
+2019-04-01 14:29:44.791 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Identity/Account/AccessDenied?ReturnUrl=%2FRole  
+2019-04-01 14:29:44.796 +08:00 [INF] Executing endpoint 'Page: /Account/AccessDenied'
+2019-04-01 14:29:44.798 +08:00 [INF] Route matched with {page = "/Account/AccessDenied", area = "Identity", action = "", controller = ""}. Executing page /Account/AccessDenied
+2019-04-01 14:29:44.799 +08:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.AccessDeniedModel.OnGet with arguments (null) - ModelState is "Valid"
+2019-04-01 14:29:44.803 +08:00 [INF] Executed handler method OnGet, returned result .
+2019-04-01 14:29:44.804 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2019-04-01 14:29:44.805 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2019-04-01 14:29:44.808 +08:00 [INF] Executed page /Account/AccessDenied in 9.2693000000000012ms
+2019-04-01 14:29:44.810 +08:00 [INF] Executed endpoint 'Page: /Account/AccessDenied'
+2019-04-01 14:29:44.817 +08:00 [INF] Request finished in 25.8069ms 200 text/html; charset=utf-8
+2019-04-01 14:29:45.456 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Role  
+2019-04-01 14:29:45.461 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.RoleController.Index (Heavy.Web)'
+2019-04-01 14:29:45.465 +08:00 [INF] Route matched with {action = "Index", controller = "Role", page = "", area = ""}. Executing action Heavy.Web.Controllers.RoleController.Index (Heavy.Web)
+2019-04-01 14:29:45.468 +08:00 [INF] Authorization failed.
+2019-04-01 14:29:45.469 +08:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2019-04-01 14:29:45.470 +08:00 [INF] Executing ForbidResult with authentication schemes ([]).
+2019-04-01 14:29:45.472 +08:00 [INF] AuthenticationScheme: Identity.Application was forbidden.
+2019-04-01 14:29:45.472 +08:00 [INF] Executed action Heavy.Web.Controllers.RoleController.Index (Heavy.Web) in 4.3575ms
+2019-04-01 14:29:45.474 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.RoleController.Index (Heavy.Web)'
+2019-04-01 14:29:45.475 +08:00 [INF] Request finished in 18.6901ms 302 
+2019-04-01 14:29:45.485 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Identity/Account/AccessDenied?ReturnUrl=%2FRole  
+2019-04-01 14:29:45.493 +08:00 [INF] Executing endpoint 'Page: /Account/AccessDenied'
+2019-04-01 14:29:45.501 +08:00 [INF] Route matched with {page = "/Account/AccessDenied", area = "Identity", action = "", controller = ""}. Executing page /Account/AccessDenied
+2019-04-01 14:29:45.503 +08:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.AccessDeniedModel.OnGet with arguments (null) - ModelState is "Valid"
+2019-04-01 14:29:45.504 +08:00 [INF] Executed handler method OnGet, returned result .
+2019-04-01 14:29:45.505 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2019-04-01 14:29:45.506 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2019-04-01 14:29:45.511 +08:00 [INF] Executed page /Account/AccessDenied in 8.5568ms
+2019-04-01 14:29:45.515 +08:00 [INF] Executed endpoint 'Page: /Account/AccessDenied'
+2019-04-01 14:29:45.520 +08:00 [INF] Request finished in 34.5433ms 200 text/html; charset=utf-8
+2019-04-01 14:29:46.123 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/User  
+2019-04-01 14:29:46.126 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.UserController.Index (Heavy.Web)'
+2019-04-01 14:29:46.134 +08:00 [INF] Route matched with {action = "Index", controller = "User", page = "", area = ""}. Executing action Heavy.Web.Controllers.UserController.Index (Heavy.Web)
+2019-04-01 14:29:46.135 +08:00 [INF] Authorization failed.
+2019-04-01 14:29:46.137 +08:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2019-04-01 14:29:46.138 +08:00 [INF] Executing ForbidResult with authentication schemes ([]).
+2019-04-01 14:29:46.139 +08:00 [INF] AuthenticationScheme: Identity.Application was forbidden.
+2019-04-01 14:29:46.140 +08:00 [INF] Executed action Heavy.Web.Controllers.UserController.Index (Heavy.Web) in 4.4296000000000006ms
+2019-04-01 14:29:46.141 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.UserController.Index (Heavy.Web)'
+2019-04-01 14:29:46.142 +08:00 [INF] Request finished in 18.4857ms 302 
+2019-04-01 14:29:46.152 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Identity/Account/AccessDenied?ReturnUrl=%2FUser  
+2019-04-01 14:29:46.154 +08:00 [INF] Executing endpoint 'Page: /Account/AccessDenied'
+2019-04-01 14:29:46.156 +08:00 [INF] Route matched with {page = "/Account/AccessDenied", area = "Identity", action = "", controller = ""}. Executing page /Account/AccessDenied
+2019-04-01 14:29:46.158 +08:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.AccessDeniedModel.OnGet with arguments (null) - ModelState is "Valid"
+2019-04-01 14:29:46.160 +08:00 [INF] Executed handler method OnGet, returned result .
+2019-04-01 14:29:46.161 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2019-04-01 14:29:46.167 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2019-04-01 14:29:46.170 +08:00 [INF] Executed page /Account/AccessDenied in 12.0166ms
+2019-04-01 14:29:46.176 +08:00 [INF] Executed endpoint 'Page: /Account/AccessDenied'
+2019-04-01 14:29:46.178 +08:00 [INF] Request finished in 25.3636ms 200 text/html; charset=utf-8
+2019-04-01 14:29:47.304 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Album  
+2019-04-01 14:29:47.307 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.AlbumController.Index (Heavy.Web)'
+2019-04-01 14:29:47.317 +08:00 [INF] Route matched with {action = "Index", controller = "Album", page = "", area = ""}. Executing action Heavy.Web.Controllers.AlbumController.Index (Heavy.Web)
+2019-04-01 14:29:47.322 +08:00 [INF] Authorization failed.
+2019-04-01 14:29:47.323 +08:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2019-04-01 14:29:47.324 +08:00 [INF] Executing ForbidResult with authentication schemes ([]).
+2019-04-01 14:29:47.326 +08:00 [INF] AuthenticationScheme: Identity.Application was forbidden.
+2019-04-01 14:29:47.329 +08:00 [INF] Executed action Heavy.Web.Controllers.AlbumController.Index (Heavy.Web) in 10.0249ms
+2019-04-01 14:29:47.331 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.AlbumController.Index (Heavy.Web)'
+2019-04-01 14:29:47.334 +08:00 [INF] Request finished in 29.4903ms 302 
+2019-04-01 14:29:47.338 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Identity/Account/AccessDenied?ReturnUrl=%2FAlbum  
+2019-04-01 14:29:47.340 +08:00 [INF] Executing endpoint 'Page: /Account/AccessDenied'
+2019-04-01 14:29:47.341 +08:00 [INF] Route matched with {page = "/Account/AccessDenied", area = "Identity", action = "", controller = ""}. Executing page /Account/AccessDenied
+2019-04-01 14:29:47.343 +08:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.AccessDeniedModel.OnGet with arguments (null) - ModelState is "Valid"
+2019-04-01 14:29:47.344 +08:00 [INF] Executed handler method OnGet, returned result .
+2019-04-01 14:29:47.345 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2019-04-01 14:29:47.351 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2019-04-01 14:29:47.356 +08:00 [INF] Executed page /Account/AccessDenied in 13.3312ms
+2019-04-01 14:29:47.366 +08:00 [INF] Executed endpoint 'Page: /Account/AccessDenied'
+2019-04-01 14:29:47.371 +08:00 [INF] Request finished in 32.3558ms 200 text/html; charset=utf-8
+2019-04-01 14:29:48.001 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/User  
+2019-04-01 14:29:48.003 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.UserController.Index (Heavy.Web)'
+2019-04-01 14:29:48.007 +08:00 [INF] Route matched with {action = "Index", controller = "User", page = "", area = ""}. Executing action Heavy.Web.Controllers.UserController.Index (Heavy.Web)
+2019-04-01 14:29:48.009 +08:00 [INF] Authorization failed.
+2019-04-01 14:29:48.012 +08:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2019-04-01 14:29:48.015 +08:00 [INF] Executing ForbidResult with authentication schemes ([]).
+2019-04-01 14:29:48.016 +08:00 [INF] AuthenticationScheme: Identity.Application was forbidden.
+2019-04-01 14:29:48.017 +08:00 [INF] Executed action Heavy.Web.Controllers.UserController.Index (Heavy.Web) in 7.979ms
+2019-04-01 14:29:48.018 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.UserController.Index (Heavy.Web)'
+2019-04-01 14:29:48.019 +08:00 [INF] Request finished in 18.1013ms 302 
+2019-04-01 14:29:48.022 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Identity/Account/AccessDenied?ReturnUrl=%2FUser  
+2019-04-01 14:29:48.024 +08:00 [INF] Executing endpoint 'Page: /Account/AccessDenied'
+2019-04-01 14:29:48.025 +08:00 [INF] Route matched with {page = "/Account/AccessDenied", area = "Identity", action = "", controller = ""}. Executing page /Account/AccessDenied
+2019-04-01 14:29:48.027 +08:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.AccessDeniedModel.OnGet with arguments (null) - ModelState is "Valid"
+2019-04-01 14:29:48.030 +08:00 [INF] Executed handler method OnGet, returned result .
+2019-04-01 14:29:48.033 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2019-04-01 14:29:48.034 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2019-04-01 14:29:48.037 +08:00 [INF] Executed page /Account/AccessDenied in 9.8261ms
+2019-04-01 14:29:48.038 +08:00 [INF] Executed endpoint 'Page: /Account/AccessDenied'
+2019-04-01 14:29:48.040 +08:00 [INF] Request finished in 17.5616ms 200 text/html; charset=utf-8
+2019-04-01 14:29:48.536 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Role  
+2019-04-01 14:29:48.538 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.RoleController.Index (Heavy.Web)'
+2019-04-01 14:29:48.541 +08:00 [INF] Route matched with {action = "Index", controller = "Role", page = "", area = ""}. Executing action Heavy.Web.Controllers.RoleController.Index (Heavy.Web)
+2019-04-01 14:29:48.543 +08:00 [INF] Authorization failed.
+2019-04-01 14:29:48.544 +08:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2019-04-01 14:29:48.548 +08:00 [INF] Executing ForbidResult with authentication schemes ([]).
+2019-04-01 14:29:48.550 +08:00 [INF] AuthenticationScheme: Identity.Application was forbidden.
+2019-04-01 14:29:48.551 +08:00 [INF] Executed action Heavy.Web.Controllers.RoleController.Index (Heavy.Web) in 7.3937ms
+2019-04-01 14:29:48.552 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.RoleController.Index (Heavy.Web)'
+2019-04-01 14:29:48.553 +08:00 [INF] Request finished in 17.37ms 302 
+2019-04-01 14:29:48.557 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Identity/Account/AccessDenied?ReturnUrl=%2FRole  
+2019-04-01 14:29:48.559 +08:00 [INF] Executing endpoint 'Page: /Account/AccessDenied'
+2019-04-01 14:29:48.560 +08:00 [INF] Route matched with {page = "/Account/AccessDenied", area = "Identity", action = "", controller = ""}. Executing page /Account/AccessDenied
+2019-04-01 14:29:48.563 +08:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.AccessDeniedModel.OnGet with arguments (null) - ModelState is "Valid"
+2019-04-01 14:29:48.569 +08:00 [INF] Executed handler method OnGet, returned result .
+2019-04-01 14:29:48.571 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2019-04-01 14:29:48.573 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2019-04-01 14:29:48.576 +08:00 [INF] Executed page /Account/AccessDenied in 12.9373ms
+2019-04-01 14:29:48.584 +08:00 [INF] Executed endpoint 'Page: /Account/AccessDenied'
+2019-04-01 14:29:48.585 +08:00 [INF] Request finished in 28.5333ms 200 text/html; charset=utf-8
+2019-04-01 14:29:49.352 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Album  
+2019-04-01 14:29:49.354 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.AlbumController.Index (Heavy.Web)'
+2019-04-01 14:29:49.356 +08:00 [INF] Route matched with {action = "Index", controller = "Album", page = "", area = ""}. Executing action Heavy.Web.Controllers.AlbumController.Index (Heavy.Web)
+2019-04-01 14:29:49.360 +08:00 [INF] Authorization failed.
+2019-04-01 14:29:49.361 +08:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2019-04-01 14:29:49.365 +08:00 [INF] Executing ForbidResult with authentication schemes ([]).
+2019-04-01 14:29:49.366 +08:00 [INF] AuthenticationScheme: Identity.Application was forbidden.
+2019-04-01 14:29:49.367 +08:00 [INF] Executed action Heavy.Web.Controllers.AlbumController.Index (Heavy.Web) in 7.7269000000000005ms
+2019-04-01 14:29:49.368 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.AlbumController.Index (Heavy.Web)'
+2019-04-01 14:29:49.369 +08:00 [INF] Request finished in 17.4553ms 302 
+2019-04-01 14:29:49.372 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Identity/Account/AccessDenied?ReturnUrl=%2FAlbum  
+2019-04-01 14:29:49.374 +08:00 [INF] Executing endpoint 'Page: /Account/AccessDenied'
+2019-04-01 14:29:49.375 +08:00 [INF] Route matched with {page = "/Account/AccessDenied", area = "Identity", action = "", controller = ""}. Executing page /Account/AccessDenied
+2019-04-01 14:29:49.377 +08:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.AccessDeniedModel.OnGet with arguments (null) - ModelState is "Valid"
+2019-04-01 14:29:49.379 +08:00 [INF] Executed handler method OnGet, returned result .
+2019-04-01 14:29:49.381 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2019-04-01 14:29:49.384 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2019-04-01 14:29:49.387 +08:00 [INF] Executed page /Account/AccessDenied in 10.7421ms
+2019-04-01 14:29:49.389 +08:00 [INF] Executed endpoint 'Page: /Account/AccessDenied'
+2019-04-01 14:29:49.391 +08:00 [INF] Request finished in 19.4107ms 200 text/html; charset=utf-8
+2019-04-01 14:29:49.896 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Role  
+2019-04-01 14:29:49.898 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.RoleController.Index (Heavy.Web)'
+2019-04-01 14:29:49.902 +08:00 [INF] Route matched with {action = "Index", controller = "Role", page = "", area = ""}. Executing action Heavy.Web.Controllers.RoleController.Index (Heavy.Web)
+2019-04-01 14:29:49.903 +08:00 [INF] Authorization failed.
+2019-04-01 14:29:49.904 +08:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2019-04-01 14:29:49.905 +08:00 [INF] Executing ForbidResult with authentication schemes ([]).
+2019-04-01 14:29:49.908 +08:00 [INF] AuthenticationScheme: Identity.Application was forbidden.
+2019-04-01 14:29:49.909 +08:00 [INF] Executed action Heavy.Web.Controllers.RoleController.Index (Heavy.Web) in 5.2603ms
+2019-04-01 14:29:49.910 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.RoleController.Index (Heavy.Web)'
+2019-04-01 14:29:49.911 +08:00 [INF] Request finished in 14.2933ms 302 
+2019-04-01 14:29:49.915 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Identity/Account/AccessDenied?ReturnUrl=%2FRole  
+2019-04-01 14:29:49.918 +08:00 [INF] Executing endpoint 'Page: /Account/AccessDenied'
+2019-04-01 14:29:49.920 +08:00 [INF] Route matched with {page = "/Account/AccessDenied", area = "Identity", action = "", controller = ""}. Executing page /Account/AccessDenied
+2019-04-01 14:29:49.921 +08:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.AccessDeniedModel.OnGet with arguments (null) - ModelState is "Valid"
+2019-04-01 14:29:49.923 +08:00 [INF] Executed handler method OnGet, returned result .
+2019-04-01 14:29:49.924 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2019-04-01 14:29:49.926 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2019-04-01 14:29:49.934 +08:00 [INF] Executed page /Account/AccessDenied in 12.620800000000001ms
+2019-04-01 14:29:49.935 +08:00 [INF] Executed endpoint 'Page: /Account/AccessDenied'
+2019-04-01 14:29:49.937 +08:00 [INF] Request finished in 22.2643ms 200 text/html; charset=utf-8
+2019-04-01 14:29:51.334 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/Identity/Account/Logout?returnUrl=%2F application/x-www-form-urlencoded 225
+2019-04-01 14:29:51.337 +08:00 [INF] Executing endpoint 'Page: /Account/Logout'
+2019-04-01 14:29:51.348 +08:00 [INF] Route matched with {page = "/Account/Logout", area = "Identity", action = "", controller = ""}. Executing page /Account/Logout
+2019-04-01 14:29:51.352 +08:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.LogoutModel.OnPost with arguments (["/"]) - ModelState is "Valid"
+2019-04-01 14:29:51.367 +08:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2019-04-01 14:29:51.369 +08:00 [INF] AuthenticationScheme: Identity.External signed out.
+2019-04-01 14:29:51.372 +08:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2019-04-01 14:29:51.373 +08:00 [INF] User logged out.
+2019-04-01 14:29:51.375 +08:00 [INF] Executed handler method OnPost, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2019-04-01 14:29:51.377 +08:00 [INF] Executing LocalRedirectResult, redirecting to /.
+2019-04-01 14:29:51.379 +08:00 [INF] Executed page /Account/Logout in 27.9483ms
+2019-04-01 14:29:51.381 +08:00 [INF] Executed endpoint 'Page: /Account/Logout'
+2019-04-01 14:29:51.383 +08:00 [INF] Request finished in 49.396ms 302 
+2019-04-01 14:29:51.386 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-04-01 14:29:51.388 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-04-01 14:29:51.390 +08:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing action Heavy.Web.Controllers.HomeController.Index (Heavy.Web)
+2019-04-01 14:29:51.394 +08:00 [INF] Executing action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web) - Validation state: "Valid"
+2019-04-01 14:29:51.400 +08:00 [INF] 这里是str...............................................200
+2019-04-01 14:29:51.402 +08:00 [INF] Executed action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.8572000000000002ms.
+2019-04-01 14:29:51.405 +08:00 [INF] Executing ViewResult, running view Index.
+2019-04-01 14:29:51.409 +08:00 [INF] Executed ViewResult - view Index executed in 4.6656ms.
+2019-04-01 14:29:51.415 +08:00 [INF] Executed action Heavy.Web.Controllers.HomeController.Index (Heavy.Web) in 23.3736ms
+2019-04-01 14:29:51.419 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-04-01 14:29:51.421 +08:00 [INF] Request finished in 34.644ms 200 text/html; charset=utf-8
+2019-04-01 14:29:52.309 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Identity/Account/Login  
+2019-04-01 14:29:52.313 +08:00 [INF] Executing endpoint 'Page: /Account/Login'
+2019-04-01 14:29:52.317 +08:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2019-04-01 14:29:52.321 +08:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.LoginModel.OnGetAsync with arguments ([""]) - ModelState is "Valid"
+2019-04-01 14:29:52.325 +08:00 [INF] AuthenticationScheme: Identity.External signed out.
+2019-04-01 14:29:52.326 +08:00 [INF] Executed handler method OnGetAsync, returned result .
+2019-04-01 14:29:52.327 +08:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2019-04-01 14:29:52.332 +08:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2019-04-01 14:29:52.338 +08:00 [INF] Executed page /Account/Login in 17.8449ms
+2019-04-01 14:29:52.340 +08:00 [INF] Executed endpoint 'Page: /Account/Login'
+2019-04-01 14:29:52.344 +08:00 [INF] Request finished in 34.164ms 200 text/html; charset=utf-8
+2019-04-01 14:29:58.220 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/Identity/Account/Login application/x-www-form-urlencoded 253
+2019-04-01 14:29:58.224 +08:00 [INF] Executing endpoint 'Page: /Account/Login'
+2019-04-01 14:29:58.225 +08:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2019-04-01 14:29:58.234 +08:00 [INF] Executing handler method Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.LoginModel.OnPostAsync with arguments ([""]) - ModelState is "Valid"
+2019-04-01 14:29:58.239 +08:00 [INF] Entity Framework Core 2.2.2-servicing-10034 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-04-01 14:29:58.250 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[BirthDate], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[IdCardNo], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0
+2019-04-01 14:29:58.274 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ApplicationUserId], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0
+2019-04-01 14:29:58.316 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2019-04-01 14:29:58.337 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0
+2019-04-01 14:29:58.375 +08:00 [INF] Executed DbCommand (7ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0
+2019-04-01 14:29:58.389 +08:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2019-04-01 14:29:58.389 +08:00 [INF] User logged in.
+2019-04-01 14:29:58.392 +08:00 [INF] Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2019-04-01 14:29:58.394 +08:00 [INF] Executing LocalRedirectResult, redirecting to /.
+2019-04-01 14:29:58.396 +08:00 [INF] Executed page /Account/Login in 166.1645ms
+2019-04-01 14:29:58.397 +08:00 [INF] Executed endpoint 'Page: /Account/Login'
+2019-04-01 14:29:58.398 +08:00 [INF] Request finished in 178.4312ms 302 
+2019-04-01 14:29:58.413 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-04-01 14:29:58.417 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-04-01 14:29:58.421 +08:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing action Heavy.Web.Controllers.HomeController.Index (Heavy.Web)
+2019-04-01 14:29:58.428 +08:00 [INF] Executing action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web) - Validation state: "Valid"
+2019-04-01 14:29:58.430 +08:00 [INF] 这里是str...............................................200
+2019-04-01 14:29:58.431 +08:00 [INF] Executed action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.0645ms.
+2019-04-01 14:29:58.436 +08:00 [INF] Executing ViewResult, running view Index.
+2019-04-01 14:29:58.438 +08:00 [INF] Executed ViewResult - view Index executed in 2.3223000000000003ms.
+2019-04-01 14:29:58.440 +08:00 [INF] Executed action Heavy.Web.Controllers.HomeController.Index (Heavy.Web) in 15.5754ms
+2019-04-01 14:29:58.442 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-04-01 14:29:58.446 +08:00 [INF] Request finished in 33.4954ms 200 text/html; charset=utf-8
+2019-04-01 14:29:59.985 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Role  
+2019-04-01 14:29:59.988 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.RoleController.Index (Heavy.Web)'
+2019-04-01 14:29:59.989 +08:00 [INF] Route matched with {action = "Index", controller = "Role", page = "", area = ""}. Executing action Heavy.Web.Controllers.RoleController.Index (Heavy.Web)
+2019-04-01 14:29:59.994 +08:00 [INF] Authorization was successful.
+2019-04-01 14:29:59.999 +08:00 [INF] Executing action method Heavy.Web.Controllers.RoleController.Index (Heavy.Web) - Validation state: "Valid"
+2019-04-01 14:30:00.014 +08:00 [INF] Entity Framework Core 2.2.2-servicing-10034 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-04-01 14:30:00.035 +08:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+2019-04-01 14:30:00.053 +08:00 [INF] Executed action method Heavy.Web.Controllers.RoleController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 53.5347ms.
+2019-04-01 14:30:00.122 +08:00 [INF] Executing ViewResult, running view Index.
+2019-04-01 14:30:00.140 +08:00 [INF] Executed ViewResult - view Index executed in 71.8336ms.
+2019-04-01 14:30:00.142 +08:00 [INF] Executed action Heavy.Web.Controllers.RoleController.Index (Heavy.Web) in 149.0411ms
+2019-04-01 14:30:00.149 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.RoleController.Index (Heavy.Web)'
+2019-04-01 14:30:00.153 +08:00 [INF] Request finished in 168.207ms 200 text/html; charset=utf-8
+2019-04-01 14:30:03.306 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Role/EditRole/5a94b64b-46f4-46cf-96bc-cb9e86a2bf48  
+2019-04-01 14:30:03.310 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.RoleController.EditRole (Heavy.Web)'
+2019-04-01 14:30:03.318 +08:00 [INF] Route matched with {action = "EditRole", controller = "Role", page = "", area = ""}. Executing action Heavy.Web.Controllers.RoleController.EditRole (Heavy.Web)
+2019-04-01 14:30:03.320 +08:00 [INF] Authorization was successful.
+2019-04-01 14:30:03.324 +08:00 [INF] Executing action method Heavy.Web.Controllers.RoleController.EditRole (Heavy.Web) with arguments (["5a94b64b-46f4-46cf-96bc-cb9e86a2bf48"]) - Validation state: "Valid"
+2019-04-01 14:30:03.366 +08:00 [INF] Entity Framework Core 2.2.2-servicing-10034 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-04-01 14:30:03.398 +08:00 [INF] Executed DbCommand (25ms) [Parameters=[@__roleId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[ConcurrencyStamp], [u].[Name], [u].[NormalizedName]
+FROM [AspNetRoles] AS [u]
+WHERE [u].[Id] = @__roleId_0
+2019-04-01 14:30:03.415 +08:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[BirthDate], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdCardNo], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2019-04-01 14:30:03.441 +08:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0
+2019-04-01 14:30:03.471 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)
+2019-04-01 14:30:03.487 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0
+2019-04-01 14:30:03.499 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)
+2019-04-01 14:30:03.506 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0
+2019-04-01 14:30:03.515 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)
+2019-04-01 14:30:03.521 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0
+2019-04-01 14:30:03.530 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)
+2019-04-01 14:30:03.535 +08:00 [INF] Executed action method Heavy.Web.Controllers.RoleController.EditRole (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 206.5609ms.
+2019-04-01 14:30:03.570 +08:00 [INF] Executing ViewResult, running view EditRole.
+2019-04-01 14:30:03.608 +08:00 [INF] Executed ViewResult - view EditRole executed in 70.0685ms.
+2019-04-01 14:30:03.610 +08:00 [INF] Executed action Heavy.Web.Controllers.RoleController.EditRole (Heavy.Web) in 290.6091ms
+2019-04-01 14:30:03.614 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.RoleController.EditRole (Heavy.Web)'
+2019-04-01 14:30:03.615 +08:00 [INF] Request finished in 308.5266ms 200 text/html; charset=utf-8
+2019-04-01 14:30:08.086 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Role/AddUserToRole/5a94b64b-46f4-46cf-96bc-cb9e86a2bf48  
+2019-04-01 14:30:08.091 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.RoleController.AddUserToRole (Heavy.Web)'
+2019-04-01 14:30:08.100 +08:00 [INF] Route matched with {action = "AddUserToRole", controller = "Role", page = "", area = ""}. Executing action Heavy.Web.Controllers.RoleController.AddUserToRole (Heavy.Web)
+2019-04-01 14:30:08.103 +08:00 [INF] Authorization was successful.
+2019-04-01 14:30:08.104 +08:00 [INF] Executing action method Heavy.Web.Controllers.RoleController.AddUserToRole (Heavy.Web) with arguments (["5a94b64b-46f4-46cf-96bc-cb9e86a2bf48"]) - Validation state: "Valid"
+2019-04-01 14:30:08.112 +08:00 [INF] Entity Framework Core 2.2.2-servicing-10034 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-04-01 14:30:08.130 +08:00 [INF] Executed DbCommand (9ms) [Parameters=[@__roleId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[ConcurrencyStamp], [u].[Name], [u].[NormalizedName]
+FROM [AspNetRoles] AS [u]
+WHERE [u].[Id] = @__roleId_0
+2019-04-01 14:30:08.137 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[BirthDate], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdCardNo], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2019-04-01 14:30:08.148 +08:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0
+2019-04-01 14:30:08.157 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)
+2019-04-01 14:30:08.165 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0
+2019-04-01 14:30:08.174 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)
+2019-04-01 14:30:08.182 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0
+2019-04-01 14:30:08.188 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)
+2019-04-01 14:30:08.195 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0
+2019-04-01 14:30:08.203 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)
+2019-04-01 14:30:08.207 +08:00 [INF] Executed action method Heavy.Web.Controllers.RoleController.AddUserToRole (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 98.0762ms.
+2019-04-01 14:30:08.225 +08:00 [INF] Executing ViewResult, running view AddUserToRole.
+2019-04-01 14:30:08.252 +08:00 [INF] Executed ViewResult - view AddUserToRole executed in 41.0052ms.
+2019-04-01 14:30:08.254 +08:00 [INF] Executed action Heavy.Web.Controllers.RoleController.AddUserToRole (Heavy.Web) in 150.71020000000001ms
+2019-04-01 14:30:08.255 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.RoleController.AddUserToRole (Heavy.Web)'
+2019-04-01 14:30:08.257 +08:00 [INF] Request finished in 171.0345ms 200 text/html; charset=utf-8
+2019-04-01 14:30:12.636 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/Role/AddUserToRole/5a94b64b-46f4-46cf-96bc-cb9e86a2bf48 application/x-www-form-urlencoded 313
+2019-04-01 14:30:12.638 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.RoleController.AddUserToRole (Heavy.Web)'
+2019-04-01 14:30:12.655 +08:00 [INF] Route matched with {action = "AddUserToRole", controller = "Role", page = "", area = ""}. Executing action Heavy.Web.Controllers.RoleController.AddUserToRole (Heavy.Web)
+2019-04-01 14:30:12.659 +08:00 [INF] Authorization was successful.
+2019-04-01 14:30:12.667 +08:00 [INF] Executing action method Heavy.Web.Controllers.RoleController.AddUserToRole (Heavy.Web) with arguments (["Heavy.Web.ViewModels.AddOrRemoveUserToRoleVM"]) - Validation state: "Valid"
+2019-04-01 14:30:12.674 +08:00 [INF] Entity Framework Core 2.2.2-servicing-10034 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-04-01 14:30:12.680 +08:00 [INF] Executed DbCommand (4ms) [Parameters=[@__roleId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[ConcurrencyStamp], [u].[Name], [u].[NormalizedName]
+FROM [AspNetRoles] AS [u]
+WHERE [u].[Id] = @__roleId_0
+2019-04-01 14:30:12.703 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[BirthDate], [e].[ConcurrencyStamp], [e].[Email], [e].[EmailConfirmed], [e].[IdCardNo], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AspNetUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-04-01 14:30:12.715 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0
+2019-04-01 14:30:12.723 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)
+2019-04-01 14:30:12.736 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0
+2019-04-01 14:30:12.759 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[BirthDate], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[IdCardNo], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0
+2019-04-01 14:30:12.847 +08:00 [INF] Executed DbCommand (13ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([UserId], [RoleId])
+VALUES (@p0, @p1);
+2019-04-01 14:30:12.908 +08:00 [INF] Executed DbCommand (32ms) [Parameters=[@p16='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p17='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (Size = 18), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTimeOffset), @p8='?' (Size = 256), @p9='?' (Size = 256), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 4000), @p14='?' (DbType = Boolean), @p15='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [BirthDate] = @p1, [ConcurrencyStamp] = @p2, [Email] = @p3, [EmailConfirmed] = @p4, [IdCardNo] = @p5, [LockoutEnabled] = @p6, [LockoutEnd] = @p7, [NormalizedEmail] = @p8, [NormalizedUserName] = @p9, [PasswordHash] = @p10, [PhoneNumber] = @p11, [PhoneNumberConfirmed] = @p12, [SecurityStamp] = @p13, [TwoFactorEnabled] = @p14, [UserName] = @p15
+WHERE [Id] = @p16 AND [ConcurrencyStamp] = @p17;
+SELECT @@ROWCOUNT;
+2019-04-01 14:30:12.938 +08:00 [INF] Executed action method Heavy.Web.Controllers.RoleController.AddUserToRole (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 266.9526ms.
+2019-04-01 14:30:12.942 +08:00 [INF] Executing RedirectResult, redirecting to /Role/EditRole/5a94b64b-46f4-46cf-96bc-cb9e86a2bf48.
+2019-04-01 14:30:12.943 +08:00 [INF] Executed action Heavy.Web.Controllers.RoleController.AddUserToRole (Heavy.Web) in 284.1404ms
+2019-04-01 14:30:12.945 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.RoleController.AddUserToRole (Heavy.Web)'
+2019-04-01 14:30:12.947 +08:00 [INF] Request finished in 311.0635ms 302 
+2019-04-01 14:30:12.951 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Role/EditRole/5a94b64b-46f4-46cf-96bc-cb9e86a2bf48  
+2019-04-01 14:30:12.952 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.RoleController.EditRole (Heavy.Web)'
+2019-04-01 14:30:12.953 +08:00 [INF] Route matched with {action = "EditRole", controller = "Role", page = "", area = ""}. Executing action Heavy.Web.Controllers.RoleController.EditRole (Heavy.Web)
+2019-04-01 14:30:12.955 +08:00 [INF] Authorization was successful.
+2019-04-01 14:30:12.958 +08:00 [INF] Executing action method Heavy.Web.Controllers.RoleController.EditRole (Heavy.Web) with arguments (["5a94b64b-46f4-46cf-96bc-cb9e86a2bf48"]) - Validation state: "Valid"
+2019-04-01 14:30:12.963 +08:00 [INF] Entity Framework Core 2.2.2-servicing-10034 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-04-01 14:30:12.967 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__roleId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[ConcurrencyStamp], [u].[Name], [u].[NormalizedName]
+FROM [AspNetRoles] AS [u]
+WHERE [u].[Id] = @__roleId_0
+2019-04-01 14:30:12.975 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[BirthDate], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IdCardNo], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2019-04-01 14:30:12.985 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0
+2019-04-01 14:30:12.990 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)
+2019-04-01 14:30:13.000 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0
+2019-04-01 14:30:13.007 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)
+2019-04-01 14:30:13.015 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0
+2019-04-01 14:30:13.020 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)
+2019-04-01 14:30:13.026 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0
+2019-04-01 14:30:13.050 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)
+2019-04-01 14:30:13.053 +08:00 [INF] Executed action method Heavy.Web.Controllers.RoleController.EditRole (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 90.4316ms.
+2019-04-01 14:30:13.055 +08:00 [INF] Executing ViewResult, running view EditRole.
+2019-04-01 14:30:13.063 +08:00 [INF] Executed ViewResult - view EditRole executed in 8.3861ms.
+2019-04-01 14:30:13.065 +08:00 [INF] Executed action Heavy.Web.Controllers.RoleController.EditRole (Heavy.Web) in 110.0531ms
+2019-04-01 14:30:13.070 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.RoleController.EditRole (Heavy.Web)'
+2019-04-01 14:30:13.073 +08:00 [INF] Request finished in 121.3615ms 200 text/html; charset=utf-8
+2019-04-01 15:03:14.015 +08:00 [INF] Entity Framework Core 2.2.2-servicing-10034 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-04-01 15:03:14.696 +08:00 [INF] Executed DbCommand (68ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Albums] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2019-04-01 15:03:14.902 +08:00 [INF] User profile is available. Using 'C:\Users\zyz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-04-01 15:03:17.168 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-04-01 15:03:17.349 +08:00 [INF] Entity Framework Core 2.2.2-servicing-10034 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-04-01 15:03:17.610 +08:00 [INF] Executed DbCommand (98ms) [Parameters=[@__get_Item_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[BirthDate], [e].[ConcurrencyStamp], [e].[Email], [e].[EmailConfirmed], [e].[IdCardNo], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AspNetUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-04-01 15:03:17.824 +08:00 [INF] Executed DbCommand (13ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ApplicationUserId], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0
+2019-04-01 15:03:17.961 +08:00 [INF] Executed DbCommand (11ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2019-04-01 15:03:18.005 +08:00 [INF] Executed DbCommand (8ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0
+2019-04-01 15:03:18.046 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0
+2019-04-01 15:03:18.161 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-04-01 15:03:18.206 +08:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing action Heavy.Web.Controllers.HomeController.Index (Heavy.Web)
+2019-04-01 15:03:18.236 +08:00 [INF] Executing action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web) - Validation state: "Valid"
+2019-04-01 15:03:18.238 +08:00 [INF] 这里是str...............................................200
+2019-04-01 15:03:18.243 +08:00 [INF] Executed action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 3.1189ms.
+2019-04-01 15:03:18.369 +08:00 [INF] Executing ViewResult, running view Index.
+2019-04-01 15:03:18.825 +08:00 [INF] Executed ViewResult - view Index executed in 561.2025ms.
+2019-04-01 15:03:18.828 +08:00 [INF] Executed action Heavy.Web.Controllers.HomeController.Index (Heavy.Web) in 620.7789ms
+2019-04-01 15:03:18.829 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-04-01 15:03:18.901 +08:00 [INF] Request finished in 1730.9485ms 200 text/html; charset=utf-8
+2019-04-01 15:03:31.141 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Role  
+2019-04-01 15:03:31.178 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.RoleController.Index (Heavy.Web)'
+2019-04-01 15:03:31.198 +08:00 [INF] Route matched with {action = "Index", controller = "Role", page = "", area = ""}. Executing action Heavy.Web.Controllers.RoleController.Index (Heavy.Web)
+2019-04-01 15:03:31.213 +08:00 [INF] Authorization was successful.
+2019-04-01 15:03:31.216 +08:00 [INF] Executing action method Heavy.Web.Controllers.RoleController.Index (Heavy.Web) - Validation state: "Valid"
+2019-04-01 15:03:31.221 +08:00 [INF] Entity Framework Core 2.2.2-servicing-10034 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-04-01 15:03:31.232 +08:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+2019-04-01 15:03:31.244 +08:00 [INF] Executed action method Heavy.Web.Controllers.RoleController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 26.4294ms.
+2019-04-01 15:03:31.316 +08:00 [INF] Executing ViewResult, running view Index.
+2019-04-01 15:03:31.343 +08:00 [INF] Executed ViewResult - view Index executed in 86.8279ms.
+2019-04-01 15:03:31.354 +08:00 [INF] Executed action Heavy.Web.Controllers.RoleController.Index (Heavy.Web) in 154.00150000000002ms
+2019-04-01 15:03:31.370 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.RoleController.Index (Heavy.Web)'
+2019-04-01 15:03:31.377 +08:00 [INF] Request finished in 235.2918ms 200 text/html; charset=utf-8
+2019-04-01 15:03:33.062 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Album  
+2019-04-01 15:03:33.068 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.AlbumController.Index (Heavy.Web)'
+2019-04-01 15:03:33.076 +08:00 [INF] Route matched with {action = "Index", controller = "Album", page = "", area = ""}. Executing action Heavy.Web.Controllers.AlbumController.Index (Heavy.Web)
+2019-04-01 15:03:33.084 +08:00 [INF] Authorization was successful.
+2019-04-01 15:03:33.086 +08:00 [INF] Executing action method Heavy.Web.Controllers.AlbumController.Index (Heavy.Web) - Validation state: "Valid"
+2019-04-01 15:03:37.932 +08:00 [INF] Entity Framework Core 2.2.2-servicing-10034 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-04-01 15:03:37.984 +08:00 [INF] Executed DbCommand (38ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Artist], [a].[CoverUrl], [a].[Price], [a].[ReleaseDate], [a].[Title]
+FROM [Albums] AS [a]
+2019-04-01 15:03:41.957 +08:00 [INF] Executed action method Heavy.Web.Controllers.AlbumController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 8869.4864ms.
+2019-04-01 15:03:42.110 +08:00 [INF] Executing ViewResult, running view Index.
+2019-04-01 15:03:43.409 +08:00 [INF] Executed ViewResult - view Index executed in 1448.9170000000001ms.
+2019-04-01 15:03:43.410 +08:00 [INF] Executed action Heavy.Web.Controllers.AlbumController.Index (Heavy.Web) in 10332.878200000001ms
+2019-04-01 15:03:43.411 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.AlbumController.Index (Heavy.Web)'
+2019-04-01 15:03:43.413 +08:00 [INF] Request finished in 10350.8357ms 200 text/html; charset=utf-8
+2019-04-01 15:03:50.539 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-04-01 15:03:50.541 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-04-01 15:03:50.542 +08:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing action Heavy.Web.Controllers.HomeController.Index (Heavy.Web)
+2019-04-01 15:03:50.543 +08:00 [INF] Executing action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web) - Validation state: "Valid"
+2019-04-01 15:03:50.544 +08:00 [INF] 这里是str...............................................200
+2019-04-01 15:03:50.545 +08:00 [INF] Executed action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.6963ms.
+2019-04-01 15:03:50.548 +08:00 [INF] Executing ViewResult, running view Index.
+2019-04-01 15:03:50.550 +08:00 [INF] Executed ViewResult - view Index executed in 2.2536ms.
+2019-04-01 15:03:50.555 +08:00 [INF] Executed action Heavy.Web.Controllers.HomeController.Index (Heavy.Web) in 11.485000000000001ms
+2019-04-01 15:03:50.558 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-04-01 15:03:50.560 +08:00 [INF] Request finished in 20.7701ms 200 text/html; charset=utf-8
+2019-04-01 15:03:51.692 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Album  
+2019-04-01 15:03:51.694 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.AlbumController.Index (Heavy.Web)'
+2019-04-01 15:03:51.694 +08:00 [INF] Route matched with {action = "Index", controller = "Album", page = "", area = ""}. Executing action Heavy.Web.Controllers.AlbumController.Index (Heavy.Web)
+2019-04-01 15:03:51.698 +08:00 [INF] Authorization was successful.
+2019-04-01 15:03:51.700 +08:00 [INF] Executing action method Heavy.Web.Controllers.AlbumController.Index (Heavy.Web) - Validation state: "Valid"
+2019-04-01 15:21:26.625 +08:00 [INF] Entity Framework Core 2.2.2-servicing-10034 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-04-01 15:21:26.987 +08:00 [INF] Executed DbCommand (43ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Albums] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2019-04-01 15:21:27.110 +08:00 [INF] User profile is available. Using 'C:\Users\zyz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-04-01 15:21:28.498 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-04-01 15:21:28.661 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-04-01 15:21:28.696 +08:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing action Heavy.Web.Controllers.HomeController.Index (Heavy.Web)
+2019-04-01 15:21:28.714 +08:00 [INF] Executing action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web) - Validation state: "Valid"
+2019-04-01 15:21:28.715 +08:00 [INF] 这里是str...............................................200
+2019-04-01 15:21:28.720 +08:00 [INF] Executed action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.4865000000000002ms.
+2019-04-01 15:21:28.758 +08:00 [INF] Executing ViewResult, running view Index.
+2019-04-01 15:21:28.988 +08:00 [INF] Executed ViewResult - view Index executed in 250.2486ms.
+2019-04-01 15:21:29.074 +08:00 [INF] Executed action Heavy.Web.Controllers.HomeController.Index (Heavy.Web) in 376.9064ms
+2019-04-01 15:21:29.075 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-04-01 15:21:29.088 +08:00 [INF] Request finished in 590.9118ms 200 text/html; charset=utf-8
+2019-04-01 16:25:57.695 +08:00 [INF] Entity Framework Core 2.2.2-servicing-10034 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-04-01 16:25:58.088 +08:00 [INF] Executed DbCommand (60ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Albums] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2019-04-01 16:25:58.202 +08:00 [INF] User profile is available. Using 'C:\Users\zyz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-04-01 16:25:59.843 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-04-01 16:26:00.025 +08:00 [INF] Entity Framework Core 2.2.2-servicing-10034 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-04-01 16:26:00.128 +08:00 [INF] Executed DbCommand (22ms) [Parameters=[@__get_Item_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[BirthDate], [e].[ConcurrencyStamp], [e].[Email], [e].[EmailConfirmed], [e].[IdCardNo], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AspNetUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-04-01 16:26:00.283 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ApplicationUserId], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0
+2019-04-01 16:26:00.407 +08:00 [INF] Executed DbCommand (23ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2019-04-01 16:26:00.455 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0
+2019-04-01 16:26:00.486 +08:00 [INF] Executed DbCommand (4ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0
+2019-04-01 16:26:00.546 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-04-01 16:26:00.584 +08:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing action Heavy.Web.Controllers.HomeController.Index (Heavy.Web)
+2019-04-01 16:26:00.625 +08:00 [INF] Executing action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web) - Validation state: "Valid"
+2019-04-01 16:26:00.627 +08:00 [INF] 这里是str...............................................200
+2019-04-01 16:26:00.631 +08:00 [INF] Executed action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2.0262000000000002ms.
+2019-04-01 16:26:00.676 +08:00 [INF] Executing ViewResult, running view Index.
+2019-04-01 16:26:00.852 +08:00 [WRN] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
+2019-04-01 16:26:00.909 +08:00 [INF] Executed ViewResult - view Index executed in 258.278ms.
+2019-04-01 16:26:00.913 +08:00 [INF] Executed action Heavy.Web.Controllers.HomeController.Index (Heavy.Web) in 323.39340000000004ms
+2019-04-01 16:26:00.915 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-04-01 16:26:00.952 +08:00 [INF] Request finished in 1107.8754ms 200 text/html; charset=utf-8
+2019-04-01 16:26:05.074 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Album  
+2019-04-01 16:26:05.085 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.AlbumController.Index (Heavy.Web)'
+2019-04-01 16:26:05.098 +08:00 [INF] Route matched with {action = "Index", controller = "Album", page = "", area = ""}. Executing action Heavy.Web.Controllers.AlbumController.Index (Heavy.Web)
+2019-04-01 16:26:05.124 +08:00 [INF] Authorization was successful.
+2019-04-01 16:26:05.126 +08:00 [INF] Executing action method Heavy.Web.Controllers.AlbumController.Index (Heavy.Web) - Validation state: "Valid"
+2019-04-01 16:26:05.132 +08:00 [INF] Entity Framework Core 2.2.2-servicing-10034 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-04-01 16:26:05.149 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Artist], [a].[CoverUrl], [a].[Price], [a].[ReleaseDate], [a].[Title]
+FROM [Albums] AS [a]
+2019-04-01 16:26:05.176 +08:00 [INF] Executed action method Heavy.Web.Controllers.AlbumController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 48.1531ms.
+2019-04-01 16:26:05.189 +08:00 [INF] Executing ViewResult, running view Index.
+2019-04-01 16:26:05.320 +08:00 [INF] Executed ViewResult - view Index executed in 134.4401ms.
+2019-04-01 16:26:05.353 +08:00 [INF] Executed action Heavy.Web.Controllers.AlbumController.Index (Heavy.Web) in 249.9546ms
+2019-04-01 16:26:05.358 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.AlbumController.Index (Heavy.Web)'
+2019-04-01 16:26:05.361 +08:00 [INF] Request finished in 287.017ms 200 text/html; charset=utf-8
+2019-04-01 16:26:24.419 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-04-01 16:26:24.422 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-04-01 16:26:24.424 +08:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing action Heavy.Web.Controllers.HomeController.Index (Heavy.Web)
+2019-04-01 16:26:24.426 +08:00 [INF] Executing action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web) - Validation state: "Valid"
+2019-04-01 16:26:25.781 +08:00 [INF] 这里是str...............................................200
+2019-04-01 16:26:25.783 +08:00 [INF] Executed action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1356.1904ms.
+2019-04-01 16:26:25.785 +08:00 [INF] Executing ViewResult, running view Index.
+2019-04-01 16:26:25.787 +08:00 [WRN] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
+2019-04-01 16:26:25.789 +08:00 [INF] Executed ViewResult - view Index executed in 3.4854000000000003ms.
+2019-04-01 16:26:25.791 +08:00 [INF] Executed action Heavy.Web.Controllers.HomeController.Index (Heavy.Web) in 1366.1607000000001ms
+2019-04-01 16:26:25.793 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-04-01 16:26:25.794 +08:00 [INF] Request finished in 1374.8618ms 200 text/html; charset=utf-8
+2019-04-01 16:26:25.886 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/favicon.ico  
+2019-04-01 16:26:25.983 +08:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'E:\ASP.NET-Core-MVC-Tutorial-Code-master\ASP.NET-Core-MVC-Tutorial-Code-master\15 start\Heavy.Web\wwwroot\favicon.ico'
+2019-04-01 16:26:25.986 +08:00 [INF] Request finished in 99.9322ms 200 image/x-icon
+2019-04-01 16:26:31.191 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Album  
+2019-04-01 16:26:31.195 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.AlbumController.Index (Heavy.Web)'
+2019-04-01 16:26:31.197 +08:00 [INF] Route matched with {action = "Index", controller = "Album", page = "", area = ""}. Executing action Heavy.Web.Controllers.AlbumController.Index (Heavy.Web)
+2019-04-01 16:26:31.201 +08:00 [INF] Authorization was successful.
+2019-04-01 16:26:31.202 +08:00 [INF] Executing action method Heavy.Web.Controllers.AlbumController.Index (Heavy.Web) - Validation state: "Valid"
+2019-04-01 16:26:31.202 +08:00 [INF] Executed action method Heavy.Web.Controllers.AlbumController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0814ms.
+2019-04-01 16:26:31.204 +08:00 [INF] Executing ViewResult, running view Index.
+2019-04-01 16:26:31.207 +08:00 [INF] Executed ViewResult - view Index executed in 3.5562ms.
+2019-04-01 16:26:31.208 +08:00 [INF] Executed action Heavy.Web.Controllers.AlbumController.Index (Heavy.Web) in 8.1408ms
+2019-04-01 16:26:31.210 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.AlbumController.Index (Heavy.Web)'
+2019-04-01 16:26:31.211 +08:00 [INF] Request finished in 20.5495ms 200 text/html; charset=utf-8
+2019-04-01 16:26:38.203 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-04-01 16:26:38.206 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-04-01 16:26:38.207 +08:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing action Heavy.Web.Controllers.HomeController.Index (Heavy.Web)
+2019-04-01 16:26:38.209 +08:00 [INF] Executing action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web) - Validation state: "Valid"
+2019-04-01 16:26:41.033 +08:00 [INF] 这里是str...............................................200
+2019-04-01 16:26:41.037 +08:00 [INF] Executed action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2827.8360000000002ms.
+2019-04-01 16:26:41.039 +08:00 [INF] Executing ViewResult, running view Index.
+2019-04-01 16:26:41.040 +08:00 [WRN] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
+2019-04-01 16:26:41.042 +08:00 [INF] Executed ViewResult - view Index executed in 3.1193ms.
+2019-04-01 16:26:41.043 +08:00 [INF] Executed action Heavy.Web.Controllers.HomeController.Index (Heavy.Web) in 2835.0591ms
+2019-04-01 16:26:41.044 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-04-01 16:26:41.045 +08:00 [INF] Request finished in 2842.012ms 200 text/html; charset=utf-8
+2019-04-01 16:26:52.340 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-04-01 16:26:52.343 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-04-01 16:26:52.344 +08:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing action Heavy.Web.Controllers.HomeController.Index (Heavy.Web)
+2019-04-01 16:26:52.346 +08:00 [INF] Executing action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web) - Validation state: "Valid"
+2019-04-01 16:26:54.519 +08:00 [INF] 这里是str...............................................200
+2019-04-01 16:26:54.521 +08:00 [INF] Executed action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2172.6234ms.
+2019-04-01 16:26:54.524 +08:00 [INF] Executing ViewResult, running view Index.
+2019-04-01 16:26:54.525 +08:00 [WRN] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
+2019-04-01 16:26:54.527 +08:00 [INF] Executed ViewResult - view Index executed in 3.8267ms.
+2019-04-01 16:26:54.535 +08:00 [INF] Executed action Heavy.Web.Controllers.HomeController.Index (Heavy.Web) in 2189.5586000000003ms
+2019-04-01 16:26:54.536 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-04-01 16:26:54.539 +08:00 [INF] Request finished in 2199.1019ms 200 text/html; charset=utf-8
+2019-04-01 16:27:00.369 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Album  
+2019-04-01 16:27:00.370 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.AlbumController.Index (Heavy.Web)'
+2019-04-01 16:27:00.371 +08:00 [INF] Route matched with {action = "Index", controller = "Album", page = "", area = ""}. Executing action Heavy.Web.Controllers.AlbumController.Index (Heavy.Web)
+2019-04-01 16:27:00.372 +08:00 [INF] Authorization was successful.
+2019-04-01 16:27:00.372 +08:00 [INF] Executing action method Heavy.Web.Controllers.AlbumController.Index (Heavy.Web) - Validation state: "Valid"
+2019-04-01 16:27:00.373 +08:00 [INF] Executed action method Heavy.Web.Controllers.AlbumController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.18680000000000002ms.
+2019-04-01 16:27:00.377 +08:00 [INF] Executing ViewResult, running view Index.
+2019-04-01 16:27:00.384 +08:00 [INF] Executed ViewResult - view Index executed in 6.7797ms.
+2019-04-01 16:27:00.391 +08:00 [INF] Executed action Heavy.Web.Controllers.AlbumController.Index (Heavy.Web) in 19.6492ms
+2019-04-01 16:27:00.392 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.AlbumController.Index (Heavy.Web)'
+2019-04-01 16:27:00.394 +08:00 [INF] Request finished in 24.9373ms 200 text/html; charset=utf-8
+2019-04-01 16:27:01.603 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-04-01 16:27:01.605 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-04-01 16:27:01.606 +08:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing action Heavy.Web.Controllers.HomeController.Index (Heavy.Web)
+2019-04-01 16:27:01.608 +08:00 [INF] Executing action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web) - Validation state: "Valid"
+2019-04-01 16:27:07.528 +08:00 [INF] 这里是str...............................................200
+2019-04-01 16:27:07.529 +08:00 [INF] Executed action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 5920.2858000000006ms.
+2019-04-01 16:27:07.531 +08:00 [INF] Executing ViewResult, running view Index.
+2019-04-01 16:27:07.532 +08:00 [WRN] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
+2019-04-01 16:27:07.533 +08:00 [INF] Executed ViewResult - view Index executed in 2.612ms.
+2019-04-01 16:27:07.536 +08:00 [INF] Executed action Heavy.Web.Controllers.HomeController.Index (Heavy.Web) in 5927.8813ms
+2019-04-01 16:27:07.538 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-04-01 16:27:07.540 +08:00 [INF] Request finished in 5936.4552ms 200 text/html; charset=utf-8
+2019-04-01 16:28:14.023 +08:00 [INF] Entity Framework Core 2.2.2-servicing-10034 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-04-01 16:28:14.381 +08:00 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Albums] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2019-04-01 16:28:14.489 +08:00 [INF] User profile is available. Using 'C:\Users\zyz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-04-01 16:28:16.284 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-04-01 16:28:16.569 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-04-01 16:28:16.601 +08:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing action Heavy.Web.Controllers.HomeController.Index (Heavy.Web)
+2019-04-01 16:28:16.623 +08:00 [INF] Executing action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web) - Validation state: "Valid"
+2019-04-01 16:28:18.728 +08:00 [INF] 这里是str...............................................200
+2019-04-01 16:28:18.736 +08:00 [INF] Executed action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2105.8351000000002ms.
+2019-04-01 16:28:18.770 +08:00 [INF] Executing ViewResult, running view Index.
+2019-04-01 16:28:18.928 +08:00 [WRN] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
+2019-04-01 16:28:18.986 +08:00 [INF] Executed ViewResult - view Index executed in 233.4635ms.
+2019-04-01 16:28:19.003 +08:00 [INF] Executed action Heavy.Web.Controllers.HomeController.Index (Heavy.Web) in 2400.4204ms
+2019-04-01 16:28:19.017 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-04-01 16:28:19.038 +08:00 [INF] Request finished in 2758.3363ms 200 text/html; charset=utf-8
+2019-04-01 16:28:34.906 +08:00 [INF] Connection id "0HLLMFFU9LHCF" bad request data: "Invalid request line: '\x16\x03\x01\x02\x00\x01\x00\x01\xFC\x03\x03C\xEA\xE7tq\x93\xF3aJ\xA15\xB9t9\xA35T\x0C\x18\xAA\x05\x8A\x88*@\x8D\xDA09\x18\x9E\xF6 \x93\xF5\x0B\xDB\xAB\xD9\xDC: N/\x95\x1D*:.\x8A\x1F\xA0\xA9\xD8\x8D\xAD\xB6"\x08\xC6\xCE\x17\xE9\xBE\xBD\x00"ZZ\x13\x01\x13\x02\x13\x03\xC0+\xC0/\xC0,\xC00\xCC\xA9\xCC\xA8\xC0\x13\xC0\x14\x00\x9C\x00\x9D\x00/\x005\x00\x0A'"
+Microsoft.AspNetCore.Server.Kestrel.Core.BadHttpRequestException: Invalid request line: '\x16\x03\x01\x02\x00\x01\x00\x01\xFC\x03\x03C\xEA\xE7tq\x93\xF3aJ\xA15\xB9t9\xA35T\x0C\x18\xAA\x05\x8A\x88*@\x8D\xDA09\x18\x9E\xF6 \x93\xF5\x0B\xDB\xAB\xD9\xDC: N/\x95\x1D*:.\x8A\x1F\xA0\xA9\xD8\x8D\xAD\xB6"\x08\xC6\xCE\x17\xE9\xBE\xBD\x00"ZZ\x13\x01\x13\x02\x13\x03\xC0+\xC0/\xC0,\xC00\xCC\xA9\xCC\xA8\xC0\x13\xC0\x14\x00\x9C\x00\x9D\x00/\x005\x00\x0A'
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.RejectRequestLine(Byte* requestLine, Int32 length)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.GetUnknownMethod(Byte* data, Int32 length, Int32& methodLength)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.ParseRequestLine(TRequestHandler handler, Byte* data, Int32 length)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.ParseRequestLine(TRequestHandler handler, ReadOnlySequence`1& buffer, SequencePosition& consumed, SequencePosition& examined)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.IHttpParser<TRequestHandler>.ParseRequestLine(TRequestHandler handler, ReadOnlySequence`1& buffer, SequencePosition& consumed, SequencePosition& examined)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.TakeStartLine(ReadOnlySequence`1 buffer, SequencePosition& consumed, SequencePosition& examined)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.ParseRequest(ReadOnlySequence`1 buffer, SequencePosition& consumed, SequencePosition& examined)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.TryParseRequest(ReadResult result, Boolean& endConnection)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+2019-04-01 16:28:34.909 +08:00 [INF] Connection id "0HLLMFFU9LHCD" bad request data: "Invalid request line: '\x16\x03\x01\x02\x00\x01\x00\x01\xFC\x03\x037\xDC~\xC6\x01Z\xF4\xCA\xAC\xC3'\xB3\xA3\xCC3\xAA\xD3/l\xA2\x12K\x9A/\xD0F\xF93\xD9\x8B\x1C\x8B \xBC\x17\xE6\xF0-\xED\xBC\xB3Ci[\xF6\xC6\x9A\xBF\x87p\xFDOX\x0A'"
+Microsoft.AspNetCore.Server.Kestrel.Core.BadHttpRequestException: Invalid request line: '\x16\x03\x01\x02\x00\x01\x00\x01\xFC\x03\x037\xDC~\xC6\x01Z\xF4\xCA\xAC\xC3'\xB3\xA3\xCC3\xAA\xD3/l\xA2\x12K\x9A/\xD0F\xF93\xD9\x8B\x1C\x8B \xBC\x17\xE6\xF0-\xED\xBC\xB3Ci[\xF6\xC6\x9A\xBF\x87p\xFDOX\x0A'
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.RejectRequestLine(Byte* requestLine, Int32 length)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.GetUnknownMethod(Byte* data, Int32 length, Int32& methodLength)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.ParseRequestLine(TRequestHandler handler, Byte* data, Int32 length)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.ParseRequestLine(TRequestHandler handler, ReadOnlySequence`1& buffer, SequencePosition& consumed, SequencePosition& examined)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.IHttpParser<TRequestHandler>.ParseRequestLine(TRequestHandler handler, ReadOnlySequence`1& buffer, SequencePosition& consumed, SequencePosition& examined)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.TakeStartLine(ReadOnlySequence`1 buffer, SequencePosition& consumed, SequencePosition& examined)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.ParseRequest(ReadOnlySequence`1 buffer, SequencePosition& consumed, SequencePosition& examined)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.TryParseRequest(ReadResult result, Boolean& endConnection)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+2019-04-01 16:28:35.299 +08:00 [INF] Connection id "0HLLMFFU9LHCG" bad request data: "Invalid request line: '\x16\x03\x01\x00\xC3\x01\x00\x00\xBF\x03\x03\x907\xDC\x93\xC7\x8B\x9E\xF9J\x18U$\x9D\xBA\xFBP\x11\x8A\xF2\x08\xA2,\x0B\xCA9\xACUp\x87X\\xCA\x00\x00\x1C\x9A\x9A\xC0+\xC0/\xC0,\xC00\xCC\xA9\xCC\xA8\xC0\x13\xC0\x14\x00\x9C\x00\x9D\x00/\x005\x00\x0A'"
+Microsoft.AspNetCore.Server.Kestrel.Core.BadHttpRequestException: Invalid request line: '\x16\x03\x01\x00\xC3\x01\x00\x00\xBF\x03\x03\x907\xDC\x93\xC7\x8B\x9E\xF9J\x18U$\x9D\xBA\xFBP\x11\x8A\xF2\x08\xA2,\x0B\xCA9\xACUp\x87X\\xCA\x00\x00\x1C\x9A\x9A\xC0+\xC0/\xC0,\xC00\xCC\xA9\xCC\xA8\xC0\x13\xC0\x14\x00\x9C\x00\x9D\x00/\x005\x00\x0A'
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.RejectRequestLine(Byte* requestLine, Int32 length)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.GetUnknownMethod(Byte* data, Int32 length, Int32& methodLength)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.ParseRequestLine(TRequestHandler handler, Byte* data, Int32 length)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.ParseRequestLine(TRequestHandler handler, ReadOnlySequence`1& buffer, SequencePosition& consumed, SequencePosition& examined)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.IHttpParser<TRequestHandler>.ParseRequestLine(TRequestHandler handler, ReadOnlySequence`1& buffer, SequencePosition& consumed, SequencePosition& examined)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.TakeStartLine(ReadOnlySequence`1 buffer, SequencePosition& consumed, SequencePosition& examined)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.ParseRequest(ReadOnlySequence`1 buffer, SequencePosition& consumed, SequencePosition& examined)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.TryParseRequest(ReadResult result, Boolean& endConnection)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+2019-04-01 16:28:39.804 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-04-01 16:28:39.811 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-04-01 16:28:39.815 +08:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing action Heavy.Web.Controllers.HomeController.Index (Heavy.Web)
+2019-04-01 16:28:39.819 +08:00 [INF] Executing action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web) - Validation state: "Valid"
+2019-04-01 16:28:41.568 +08:00 [INF] 这里是str...............................................200
+2019-04-01 16:28:41.570 +08:00 [INF] Executed action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1750.0018ms.
+2019-04-01 16:28:41.574 +08:00 [INF] Executing ViewResult, running view Index.
+2019-04-01 16:28:41.580 +08:00 [WRN] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
+2019-04-01 16:28:41.593 +08:00 [INF] Executed ViewResult - view Index executed in 19.0472ms.
+2019-04-01 16:28:41.601 +08:00 [INF] Executed action Heavy.Web.Controllers.HomeController.Index (Heavy.Web) in 1784.1155ms
+2019-04-01 16:28:41.602 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-04-01 16:28:41.604 +08:00 [INF] Request finished in 1800.8029ms 200 text/html; charset=utf-8
+2019-04-01 16:28:46.793 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Album  
+2019-04-01 16:28:46.802 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.AlbumController.Index (Heavy.Web)'
+2019-04-01 16:28:46.821 +08:00 [INF] Route matched with {action = "Index", controller = "Album", page = "", area = ""}. Executing action Heavy.Web.Controllers.AlbumController.Index (Heavy.Web)
+2019-04-01 16:28:46.843 +08:00 [INF] Authorization was successful.
+2019-04-01 16:28:46.844 +08:00 [INF] Executing action method Heavy.Web.Controllers.AlbumController.Index (Heavy.Web) - Validation state: "Valid"
+2019-04-01 16:28:46.850 +08:00 [INF] Entity Framework Core 2.2.2-servicing-10034 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-04-01 16:28:46.911 +08:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Artist], [a].[CoverUrl], [a].[Price], [a].[ReleaseDate], [a].[Title]
+FROM [Albums] AS [a]
+2019-04-01 16:28:46.982 +08:00 [INF] Executed action method Heavy.Web.Controllers.AlbumController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 137.3538ms.
+2019-04-01 16:28:46.995 +08:00 [INF] Executing ViewResult, running view Index.
+2019-04-01 16:28:47.093 +08:00 [INF] Executed ViewResult - view Index executed in 100.81320000000001ms.
+2019-04-01 16:28:47.097 +08:00 [INF] Executed action Heavy.Web.Controllers.AlbumController.Index (Heavy.Web) in 271.3281ms
+2019-04-01 16:28:47.102 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.AlbumController.Index (Heavy.Web)'
+2019-04-01 16:28:47.129 +08:00 [INF] Request finished in 336.2198ms 200 text/html; charset=utf-8
+2019-04-01 16:28:48.415 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-04-01 16:28:48.416 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-04-01 16:28:48.417 +08:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing action Heavy.Web.Controllers.HomeController.Index (Heavy.Web)
+2019-04-01 16:28:48.420 +08:00 [INF] Executing action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web) - Validation state: "Valid"
+2019-04-01 16:28:51.368 +08:00 [INF] 这里是str...............................................200
+2019-04-01 16:28:51.372 +08:00 [INF] Executed action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2949.9255000000003ms.
+2019-04-01 16:28:51.375 +08:00 [INF] Executing ViewResult, running view Index.
+2019-04-01 16:28:51.378 +08:00 [WRN] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
+2019-04-01 16:28:51.383 +08:00 [INF] Executed ViewResult - view Index executed in 8.5794ms.
+2019-04-01 16:28:51.389 +08:00 [INF] Executed action Heavy.Web.Controllers.HomeController.Index (Heavy.Web) in 2970.1277ms
+2019-04-01 16:28:51.391 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-04-01 16:28:51.395 +08:00 [INF] Request finished in 2979.976ms 200 text/html; charset=utf-8
+2019-04-01 16:28:54.973 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Album  
+2019-04-01 16:28:54.982 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.AlbumController.Index (Heavy.Web)'
+2019-04-01 16:28:54.986 +08:00 [INF] Route matched with {action = "Index", controller = "Album", page = "", area = ""}. Executing action Heavy.Web.Controllers.AlbumController.Index (Heavy.Web)
+2019-04-01 16:28:54.990 +08:00 [INF] Authorization was successful.
+2019-04-01 16:28:54.991 +08:00 [INF] Executing action method Heavy.Web.Controllers.AlbumController.Index (Heavy.Web) - Validation state: "Valid"
+2019-04-01 16:28:54.993 +08:00 [INF] Executed action method Heavy.Web.Controllers.AlbumController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.087000000000000008ms.
+2019-04-01 16:28:54.998 +08:00 [INF] Executing ViewResult, running view Index.
+2019-04-01 16:28:55.001 +08:00 [INF] Executed ViewResult - view Index executed in 2.987ms.
+2019-04-01 16:28:55.008 +08:00 [INF] Executed action Heavy.Web.Controllers.AlbumController.Index (Heavy.Web) in 18.517300000000002ms
+2019-04-01 16:28:55.010 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.AlbumController.Index (Heavy.Web)'
+2019-04-01 16:28:55.011 +08:00 [INF] Request finished in 37.3849ms 200 text/html; charset=utf-8
+2019-04-01 16:28:55.798 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-04-01 16:28:55.800 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-04-01 16:28:55.802 +08:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing action Heavy.Web.Controllers.HomeController.Index (Heavy.Web)
+2019-04-01 16:28:55.807 +08:00 [INF] Executing action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web) - Validation state: "Valid"

@@ -1,12 +1,16 @@
-﻿using System.Runtime.InteropServices;
+﻿using System;
+using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
+using Heavy.Web.Data;
 using Heavy.Web.Models;
 using Heavy.Web.Services;
 using Heavy.Web.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace Heavy.Web.Controllers
 {
@@ -16,19 +20,38 @@ namespace Heavy.Web.Controllers
     {
         private readonly IAlbumService _albumService;
         private readonly HtmlEncoder htmlEncoder;
+        private readonly IMemoryCache memoryCache;
 
-        public AlbumController(IAlbumService albumService,HtmlEncoder htmlEncoder)
+        public AlbumController(IAlbumService albumService,HtmlEncoder htmlEncoder,IMemoryCache memoryCache)
         {
             _albumService = albumService;
             this.htmlEncoder = htmlEncoder;
+            this.memoryCache = memoryCache;
         }
 
         // GET: Album
 
         public async Task<ActionResult> Index()
         {
-            var albums = await _albumService.GetAllAsync();
-            return View(albums);
+            if (!memoryCache.TryGetValue(CacheEntryConstants.AlbumsOfToday,out List<Album> AlbumList))
+            {
+                AlbumList = await _albumService.GetAllAsync();
+
+                var CacheOption = new MemoryCacheEntryOptions()
+                    .SetAbsoluteExpiration(TimeSpan.FromSeconds(10000))
+                    .SetSlidingExpiration(TimeSpan.FromSeconds(30))
+                    .RegisterPostEvictionCallback(huidaio,this);
+
+                memoryCache.Set(CacheEntryConstants.AlbumsOfToday, AlbumList, CacheOption);
+
+            }
+
+            return View(AlbumList);
+        }
+
+        //缓存的回调函数
+        private void huidaio(object key, object value, EvictionReason reason, object state)
+        {
         }
 
         // GET: Album/Details/5

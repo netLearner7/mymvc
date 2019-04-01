@@ -1,0 +1,350 @@
+2019-03-27 19:25:19.372 +08:00 [INF] Entity Framework Core 2.2.2-servicing-10034 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-03-27 19:25:20.841 +08:00 [INF] Executed DbCommand (648ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Albums] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2019-03-27 19:25:21.040 +08:00 [INF] User profile is available. Using 'C:\Users\zyz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-03-27 19:25:24.140 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-03-27 19:25:24.306 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-03-27 19:25:24.420 +08:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing action Heavy.Web.Controllers.HomeController.Index (Heavy.Web)
+2019-03-27 19:25:24.449 +08:00 [INF] Executing action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web) - Validation state: "Valid"
+2019-03-27 19:25:24.454 +08:00 [INF] 这里是str...............................................200
+2019-03-27 19:25:24.461 +08:00 [INF] Executed action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 3.5118ms.
+2019-03-27 19:25:24.532 +08:00 [INF] Executing ViewResult, running view Index.
+2019-03-27 19:25:24.885 +08:00 [INF] Executed ViewResult - view Index executed in 405.6291ms.
+2019-03-27 19:25:24.899 +08:00 [INF] Executed action Heavy.Web.Controllers.HomeController.Index (Heavy.Web) in 477.3872ms
+2019-03-27 19:25:24.923 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-03-27 19:25:24.942 +08:00 [INF] Request finished in 803.3658ms 200 text/html; charset=utf-8
+2019-03-27 19:46:51.924 +08:00 [INF] Entity Framework Core 2.2.2-servicing-10034 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-03-27 19:46:52.653 +08:00 [INF] Executed DbCommand (272ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Albums] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2019-03-27 19:46:52.813 +08:00 [INF] User profile is available. Using 'C:\Users\zyz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-03-27 19:46:54.783 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-03-27 19:46:54.941 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-03-27 19:46:54.986 +08:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing action Heavy.Web.Controllers.HomeController.Index (Heavy.Web)
+2019-03-27 19:46:55.006 +08:00 [INF] Executing action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web) - Validation state: "Valid"
+2019-03-27 19:46:55.007 +08:00 [INF] 这里是str...............................................200
+2019-03-27 19:46:55.011 +08:00 [INF] Executed action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.7928000000000002ms.
+2019-03-27 19:46:55.077 +08:00 [INF] Executing ViewResult, running view Index.
+2019-03-27 19:46:55.485 +08:00 [INF] Executed ViewResult - view Index executed in 463.076ms.
+2019-03-27 19:46:55.491 +08:00 [INF] Executed action Heavy.Web.Controllers.HomeController.Index (Heavy.Web) in 503.12550000000005ms
+2019-03-27 19:46:55.495 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-03-27 19:46:55.518 +08:00 [INF] Request finished in 735.5727ms 200 text/html; charset=utf-8
+2019-03-27 19:48:19.186 +08:00 [INF] Entity Framework Core 2.2.2-servicing-10034 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-03-27 19:48:19.544 +08:00 [INF] Executed DbCommand (50ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Albums] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2019-03-27 19:48:19.657 +08:00 [INF] User profile is available. Using 'C:\Users\zyz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-03-27 19:48:21.121 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-03-27 19:48:21.338 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-03-27 19:48:21.409 +08:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing action Heavy.Web.Controllers.HomeController.Index (Heavy.Web)
+2019-03-27 19:48:21.440 +08:00 [INF] Executing action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web) - Validation state: "Valid"
+2019-03-27 19:48:21.442 +08:00 [INF] 这里是str...............................................200
+2019-03-27 19:48:21.448 +08:00 [INF] Executed action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.8547ms.
+2019-03-27 19:48:21.482 +08:00 [INF] Executing ViewResult, running view Index.
+2019-03-27 19:48:21.816 +08:00 [INF] Executed ViewResult - view Index executed in 352.396ms.
+2019-03-27 19:48:21.877 +08:00 [INF] Executed action Heavy.Web.Controllers.HomeController.Index (Heavy.Web) in 465.9888ms
+2019-03-27 19:48:21.915 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-03-27 19:48:21.940 +08:00 [INF] Request finished in 820.837ms 200 text/html; charset=utf-8
+2019-03-27 19:51:39.812 +08:00 [INF] Entity Framework Core 2.2.2-servicing-10034 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-03-27 19:51:40.229 +08:00 [INF] Executed DbCommand (38ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Albums] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2019-03-27 19:51:40.337 +08:00 [INF] User profile is available. Using 'C:\Users\zyz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-03-27 19:51:41.975 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-03-27 19:51:42.162 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-03-27 19:51:42.208 +08:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing action Heavy.Web.Controllers.HomeController.Index (Heavy.Web)
+2019-03-27 19:51:42.229 +08:00 [INF] Executing action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web) - Validation state: "Valid"
+2019-03-27 19:51:42.234 +08:00 [INF] 这里是str...............................................200
+2019-03-27 19:51:42.239 +08:00 [INF] Executed action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 5.8244000000000007ms.
+2019-03-27 19:51:42.274 +08:00 [INF] Executing ViewResult, running view Index.
+2019-03-27 19:51:42.493 +08:00 [INF] Executed ViewResult - view Index executed in 239.0797ms.
+2019-03-27 19:51:42.521 +08:00 [INF] Executed action Heavy.Web.Controllers.HomeController.Index (Heavy.Web) in 310.0127ms
+2019-03-27 19:51:42.522 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-03-27 19:51:42.541 +08:00 [INF] Request finished in 568.3462ms 200 text/html; charset=utf-8
+2019-03-27 19:51:50.882 +08:00 [INF] Entity Framework Core 2.2.2-servicing-10034 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-03-27 19:51:51.252 +08:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Albums] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2019-03-27 19:51:51.362 +08:00 [INF] User profile is available. Using 'C:\Users\zyz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-03-27 19:51:52.885 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-03-27 19:51:52.991 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-03-27 19:51:53.041 +08:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing action Heavy.Web.Controllers.HomeController.Index (Heavy.Web)
+2019-03-27 19:51:53.072 +08:00 [INF] Executing action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web) - Validation state: "Valid"
+2019-03-27 19:51:53.074 +08:00 [INF] 这里是str...............................................200
+2019-03-27 19:51:53.079 +08:00 [INF] Executed action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2.0326ms.
+2019-03-27 19:51:53.117 +08:00 [INF] Executing ViewResult, running view Index.
+2019-03-27 19:51:53.345 +08:00 [INF] Executed ViewResult - view Index executed in 249.2203ms.
+2019-03-27 19:51:53.361 +08:00 [INF] Executed action Heavy.Web.Controllers.HomeController.Index (Heavy.Web) in 317.9986ms
+2019-03-27 19:51:53.369 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-03-27 19:51:53.390 +08:00 [INF] Request finished in 507.0679ms 200 text/html; charset=utf-8
+2019-03-27 20:04:48.332 +08:00 [INF] Entity Framework Core 2.2.2-servicing-10034 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-03-27 20:04:49.070 +08:00 [INF] Executed DbCommand (244ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Albums] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2019-03-27 20:04:49.211 +08:00 [INF] User profile is available. Using 'C:\Users\zyz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-03-27 20:04:51.015 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-03-27 20:04:51.166 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-03-27 20:04:51.206 +08:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing action Heavy.Web.Controllers.HomeController.Index (Heavy.Web)
+2019-03-27 20:04:51.234 +08:00 [INF] Executing action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web) - Validation state: "Valid"
+2019-03-27 20:04:51.236 +08:00 [INF] 这里是str...............................................200
+2019-03-27 20:04:51.242 +08:00 [INF] Executed action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2.1269ms.
+2019-03-27 20:04:51.311 +08:00 [INF] Executing ViewResult, running view Index.
+2019-03-27 20:04:51.612 +08:00 [INF] Executed ViewResult - view Index executed in 355.5231ms.
+2019-03-27 20:04:51.638 +08:00 [INF] Executed action Heavy.Web.Controllers.HomeController.Index (Heavy.Web) in 428.452ms
+2019-03-27 20:04:51.640 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-03-27 20:04:51.662 +08:00 [INF] Request finished in 648.3497ms 200 text/html; charset=utf-8
+2019-03-27 20:06:54.679 +08:00 [INF] Entity Framework Core 2.2.2-servicing-10034 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-03-27 20:06:55.078 +08:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Albums] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2019-03-27 20:06:55.205 +08:00 [INF] User profile is available. Using 'C:\Users\zyz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-03-27 20:06:56.896 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-03-27 20:06:57.039 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-03-27 20:06:57.058 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-03-27 20:06:57.066 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'System.String' while attempting to activate 'Heavy.Web.Filters.LogResourceFilter'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.TypeFilterAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Internal.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Internal.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Internal.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcEndpointDataSource.<>c__DisplayClass21_0.<CreateEndpoint>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-03-27 20:06:57.413 +08:00 [INF] Request finished in 517.9927ms 500 text/html; charset=utf-8
+2019-03-27 20:09:53.691 +08:00 [INF] Entity Framework Core 2.2.2-servicing-10034 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-03-27 20:09:54.063 +08:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Albums] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2019-03-27 20:09:54.164 +08:00 [INF] User profile is available. Using 'C:\Users\zyz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-03-27 20:09:55.825 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-03-27 20:09:55.956 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-03-27 20:09:55.962 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-03-27 20:09:55.965 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'System.String' while attempting to activate 'Heavy.Web.Filters.LogResourceFilter'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.TypeFilterAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Internal.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Internal.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Internal.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcEndpointDataSource.<>c__DisplayClass21_0.<CreateEndpoint>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-03-27 20:09:56.120 +08:00 [INF] Request finished in 296.757ms 500 text/html; charset=utf-8
+2019-03-27 20:11:09.966 +08:00 [INF] Entity Framework Core 2.2.2-servicing-10034 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-03-27 20:11:10.312 +08:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Albums] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2019-03-27 20:11:10.415 +08:00 [INF] User profile is available. Using 'C:\Users\zyz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-03-27 20:11:12.230 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-03-27 20:11:12.354 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-03-27 20:11:12.400 +08:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing action Heavy.Web.Controllers.HomeController.Index (Heavy.Web)
+2019-03-27 20:11:12.431 +08:00 [INF] Executing action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web) - Validation state: "Valid"
+2019-03-27 20:11:12.432 +08:00 [INF] 这里是str...............................................200
+2019-03-27 20:11:12.436 +08:00 [INF] Executed action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.483ms.
+2019-03-27 20:11:12.468 +08:00 [INF] Executing ViewResult, running view Index.
+2019-03-27 20:11:12.838 +08:00 [INF] Executed ViewResult - view Index executed in 387.5589ms.
+2019-03-27 20:11:12.870 +08:00 [INF] Executed action Heavy.Web.Controllers.HomeController.Index (Heavy.Web) in 466.8179ms
+2019-03-27 20:11:12.874 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-03-27 20:11:12.892 +08:00 [INF] Request finished in 662.7949ms 200 text/html; charset=utf-8
+2019-03-27 20:44:07.813 +08:00 [INF] Entity Framework Core 2.2.2-servicing-10034 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-03-27 20:44:08.530 +08:00 [INF] Executed DbCommand (260ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Albums] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2019-03-27 20:44:08.682 +08:00 [INF] User profile is available. Using 'C:\Users\zyz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-03-27 20:44:11.226 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-03-27 20:44:11.379 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-03-27 20:44:11.434 +08:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing action Heavy.Web.Controllers.HomeController.Index (Heavy.Web)
+2019-03-27 20:44:11.467 +08:00 [INF] Executing action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web) - Validation state: "Valid"
+2019-03-27 20:44:11.471 +08:00 [INF] 这里是str...............................................200
+2019-03-27 20:44:11.478 +08:00 [INF] Executed action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2.3645ms.
+2019-03-27 20:44:11.608 +08:00 [INF] Executing ViewResult, running view Index.
+2019-03-27 20:44:12.043 +08:00 [INF] Executed ViewResult - view Index executed in 534.1271ms.
+2019-03-27 20:44:12.050 +08:00 [INF] Executed action Heavy.Web.Controllers.HomeController.Index (Heavy.Web) in 612.9854ms
+2019-03-27 20:44:12.057 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-03-27 20:44:12.088 +08:00 [INF] Request finished in 858.5816ms 200 text/html; charset=utf-8
+2019-03-27 20:47:28.060 +08:00 [INF] Entity Framework Core 2.2.2-servicing-10034 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-03-27 20:47:28.558 +08:00 [INF] Executed DbCommand (37ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Albums] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2019-03-27 20:47:28.682 +08:00 [INF] User profile is available. Using 'C:\Users\zyz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-03-27 20:47:30.510 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-03-27 20:47:30.766 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-03-27 20:47:30.808 +08:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing action Heavy.Web.Controllers.HomeController.Index (Heavy.Web)
+2019-03-27 20:47:30.832 +08:00 [INF] Executing action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web) - Validation state: "Valid"
+2019-03-27 20:47:30.834 +08:00 [INF] 这里是str...............................................200
+2019-03-27 20:47:30.841 +08:00 [INF] Executed action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2.7729ms.
+2019-03-27 20:47:30.907 +08:00 [INF] Executing ViewResult, running view Index.
+2019-03-27 20:47:31.245 +08:00 [INF] Executed ViewResult - view Index executed in 381.0194ms.
+2019-03-27 20:47:31.275 +08:00 [INF] Executed action Heavy.Web.Controllers.HomeController.Index (Heavy.Web) in 466.25120000000004ms
+2019-03-27 20:47:31.292 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-03-27 20:47:31.326 +08:00 [INF] Request finished in 819.9632ms 200 text/html; charset=utf-8
+2019-03-27 20:50:20.688 +08:00 [INF] Entity Framework Core 2.2.2-servicing-10034 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-03-27 20:50:21.148 +08:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Albums] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2019-03-27 20:50:21.274 +08:00 [INF] User profile is available. Using 'C:\Users\zyz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-03-27 20:50:22.728 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-03-27 20:50:22.962 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-03-27 20:50:23.041 +08:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing action Heavy.Web.Controllers.HomeController.Index (Heavy.Web)
+2019-03-27 20:50:23.065 +08:00 [INF] Executing action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web) - Validation state: "Valid"
+2019-03-27 20:50:23.066 +08:00 [INF] 这里是str...............................................200
+2019-03-27 20:50:23.076 +08:00 [INF] Executed action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.9613ms.
+2019-03-27 20:50:23.107 +08:00 [INF] Executing ViewResult, running view Index.
+2019-03-27 20:50:23.341 +08:00 [INF] Executed ViewResult - view Index executed in 243.5128ms.
+2019-03-27 20:50:23.355 +08:00 [INF] Executed action Heavy.Web.Controllers.HomeController.Index (Heavy.Web) in 311.4642ms
+2019-03-27 20:50:23.364 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-03-27 20:50:23.393 +08:00 [INF] Request finished in 662.8952ms 200 text/html; charset=utf-8
+2019-03-27 20:53:12.892 +08:00 [INF] Entity Framework Core 2.2.2-servicing-10034 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-03-27 20:53:13.273 +08:00 [INF] Executed DbCommand (31ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Albums] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2019-03-27 20:53:13.398 +08:00 [INF] User profile is available. Using 'C:\Users\zyz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-03-27 20:53:15.449 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-03-27 20:53:15.560 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-03-27 20:53:15.628 +08:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing action Heavy.Web.Controllers.HomeController.Index (Heavy.Web)
+2019-03-27 20:53:15.686 +08:00 [INF] Executing action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web) - Validation state: "Valid"
+2019-03-27 20:53:15.688 +08:00 [INF] 这里是str...............................................200
+2019-03-27 20:53:15.692 +08:00 [INF] Executed action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.739ms.
+2019-03-27 20:53:15.723 +08:00 [INF] Executing ViewResult, running view Index.
+2019-03-27 20:53:15.949 +08:00 [INF] Executed ViewResult - view Index executed in 243.9855ms.
+2019-03-27 20:53:15.952 +08:00 [INF] Executed action Heavy.Web.Controllers.HomeController.Index (Heavy.Web) in 309.80150000000003ms
+2019-03-27 20:53:15.953 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-03-27 20:53:15.964 +08:00 [INF] Request finished in 516.9969ms 200 text/html; charset=utf-8
+2019-03-27 20:55:14.287 +08:00 [INF] Entity Framework Core 2.2.2-servicing-10034 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-03-27 20:55:14.757 +08:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Albums] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2019-03-27 20:55:14.883 +08:00 [INF] User profile is available. Using 'C:\Users\zyz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-03-27 20:55:16.728 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-03-27 20:55:16.950 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-03-27 20:55:17.029 +08:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing action Heavy.Web.Controllers.HomeController.Index (Heavy.Web)
+2019-03-27 20:55:17.047 +08:00 [INF] Executing action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web) - Validation state: "Valid"
+2019-03-27 20:55:17.048 +08:00 [INF] 这里是str...............................................200
+2019-03-27 20:55:17.053 +08:00 [INF] Executed action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.6392ms.
+2019-03-27 20:55:17.088 +08:00 [INF] Executing ViewResult, running view Index.
+2019-03-27 20:55:17.360 +08:00 [INF] Executed ViewResult - view Index executed in 290.875ms.
+2019-03-27 20:55:17.380 +08:00 [INF] Executed action Heavy.Web.Controllers.HomeController.Index (Heavy.Web) in 349.7115ms
+2019-03-27 20:55:17.394 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-03-27 20:55:17.416 +08:00 [INF] Request finished in 689.8494ms 200 text/html; charset=utf-8
+2019-03-27 20:58:02.426 +08:00 [INF] Entity Framework Core 2.2.2-servicing-10034 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-03-27 20:58:02.836 +08:00 [INF] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Albums] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2019-03-27 20:58:02.969 +08:00 [INF] User profile is available. Using 'C:\Users\zyz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-03-27 20:58:05.200 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-03-27 20:58:05.627 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-03-27 20:58:05.677 +08:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing action Heavy.Web.Controllers.HomeController.Index (Heavy.Web)
+2019-03-27 20:58:05.706 +08:00 [INF] Executing action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web) - Validation state: "Valid"
+2019-03-27 20:58:05.710 +08:00 [INF] 这里是str...............................................200
+2019-03-27 20:58:05.720 +08:00 [INF] Executed action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 5.3875ms.
+2019-03-27 20:58:05.795 +08:00 [INF] Executing ViewResult, running view Index.
+2019-03-27 20:58:06.114 +08:00 [INF] Executed ViewResult - view Index executed in 361.69350000000003ms.
+2019-03-27 20:58:06.147 +08:00 [INF] Executed action Heavy.Web.Controllers.HomeController.Index (Heavy.Web) in 468.1141ms
+2019-03-27 20:58:06.148 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-03-27 20:58:06.169 +08:00 [INF] Request finished in 971.5908ms 200 text/html; charset=utf-8
+2019-03-27 21:14:54.997 +08:00 [INF] Entity Framework Core 2.2.2-servicing-10034 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-03-27 21:14:55.406 +08:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Albums] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2019-03-27 21:14:55.508 +08:00 [INF] User profile is available. Using 'C:\Users\zyz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-03-27 21:14:57.455 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-03-27 21:14:57.647 +08:00 [INF] Executing endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-03-27 21:14:57.688 +08:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing action Heavy.Web.Controllers.HomeController.Index (Heavy.Web)
+2019-03-27 21:14:57.707 +08:00 [INF] Executing action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web) - Validation state: "Valid"
+2019-03-27 21:14:57.709 +08:00 [INF] 这里是str...............................................200
+2019-03-27 21:14:57.713 +08:00 [INF] Executed action method Heavy.Web.Controllers.HomeController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.4557ms.
+2019-03-27 21:14:57.758 +08:00 [INF] Executing ViewResult, running view Index.
+2019-03-27 21:14:58.049 +08:00 [INF] Executed ViewResult - view Index executed in 321.1461ms.
+2019-03-27 21:14:58.054 +08:00 [INF] Executed action Heavy.Web.Controllers.HomeController.Index (Heavy.Web) in 364.05600000000004ms
+2019-03-27 21:14:58.103 +08:00 [INF] Executed endpoint 'Heavy.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-03-27 21:14:58.132 +08:00 [INF] Request finished in 677.1753ms 200 text/html; charset=utf-8

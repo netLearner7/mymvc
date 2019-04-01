@@ -14,6 +14,8 @@ using Heavy.Web.Models;
 using Heavy.Web.Auth;
 using Microsoft.AspNetCore.Authorization;
 using System;
+using Heavy.Web.Filters;
+using System.Security.Policy;
 
 namespace Heavy.Web
 {
@@ -79,12 +81,33 @@ namespace Heavy.Web
 
             });
 
-            services.AddSingleton<IAuthorizationHandler, EmailHandler>();
+            //services.AddSingleton<IAuthorizationHandler, EmailHandler>();
             services.AddSingleton<IAuthorizationHandler, userQueirmentHandler>();
-            services.AddSingleton<IAuthorizationHandler, zyz2Handler>();
+            // services.AddSingleton<IAuthorizationHandler, zyz2Handler>();
+
+            services.AddResponseCompression();
 
             services.AddAntiforgery();
-            services.AddMvc(option => { option.Filters.Add(new AutoValidateAntiforgeryTokenAttribute()); });
+            services.AddMvc(
+                option => {
+                    option.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
+                    //option.Filters.Add(new LogResourceFilter("这里是全局"));
+                    //option.Filters.Add(typeof(LogResourceFilter));
+                    //option.Filters.Add<LogResourceFilter>();
+
+                    option.CacheProfiles.Add("defalut", new CacheProfile() {
+                        Duration = 60
+                    });
+                    option.CacheProfiles.Add("never", new CacheProfile()
+                    {
+                        Location = ResponseCacheLocation.None,
+                        NoStore=true
+                    });
+                    
+                }                
+            );
+
+            services.AddMemoryCache();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -106,6 +129,7 @@ namespace Heavy.Web
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+            app.UseResponseCompression();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();

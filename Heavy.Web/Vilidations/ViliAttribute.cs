@@ -5,6 +5,7 @@ using System.Linq;
 
 namespace Heavy.Web.Vilidations
 {
+    //扩展特性校验model  //类似[MaxLength(18)]的东西
     public class ViliAttribute : Attribute, IModelValidator
     {
         public string Error { get; set; }
